@@ -22,13 +22,6 @@
 
 ## II. Skenario & Asumsi Utama
 
-### Asumsi
-
-1. **Portal web JOSS (Fase 1) sudah live dan stabil** di https://joss.jombangkab.go.id — mencakup katalog layanan publik, sistem login/register, dan integrasi SSO Keycloak.
-2. **SSO Keycloak sudah berjalan** di `sso-v2.jombangkab.go.id` dengan realm `jombangkab` dan client `joss`, menggunakan OAuth2/OIDC Authorization Code flow.
-3. **Sebagian API untuk mobile belum tersedia** — perlu pengembangan API tambahan (REST API) di sisi backend untuk mendukung fitur-fitur spesifik mobile (profil pengguna, riwayat, notifikasi, dll.).
-4. **Infrastruktur server** (hosting, database, domain, Keycloak) sudah siap dan tidak perlu setup ulang.
-5. **KAK (Kerangka Acuan Kerja)** sedang dalam proses finalisasi oleh tim Jombang dan diharapkan selesai sebelum kick-off.
 
 ### Arsitektur SSO Keycloak (Existing)
 
