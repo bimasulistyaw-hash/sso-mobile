@@ -8,13 +8,15 @@
 
 | **Item**                    | **Detail**                                                                 |
 | --------------------------- | -------------------------------------------------------------------------- |
-| **Nama Proyek**             | JOSS Mobile Android (Jombang Smart Service)                                |
-| **Klien**                   | Pemerintah Kabupaten Jombang                                               |
-| **Fase**                    | Fase 2 — Pengembangan Aplikasi Mobile Android                              |
+| **Nama Proyek**             | JOSS Mobile Android (Jombang One Stop Service)                             |
+| **Klien**                   | Pemerintah Kabupaten Jombang — Dinas Komunikasi dan Informatika            |
+| **Fase**                    | Fase 2 — Pengembangan Portal Aplikasi Mobile Android                       |
 | **Durasi**                  | 3 Bulan (12 Minggu Efektif)                                               |
 | **Estimasi Mulai**          | Pekan ke-2 s.d. ke-3 Oktober 2026 *(estimasi mundur 1–2 minggu dari 1 Oktober)* |
 | **Estimasi Selesai**        | Pekan ke-2 s.d. ke-3 Januari 2027                                         |
-| **Status Proyek Fase 1**    | [v] Selesai — Sistem SSO berbasis Web sudah *live* dan stabil              |
+| **Portal Web (Fase 1)**     | [v] Live — https://joss.jombangkab.go.id                                  |
+| **SSO Server**              | Keycloak — https://sso-v2.jombangkab.go.id (Realm: `jombangkab`)          |
+| **Protokol Autentikasi**    | OAuth2 / OpenID Connect (Authorization Code Flow)                          |
 
 ---
 
@@ -22,15 +24,47 @@
 
 ### Asumsi
 
-1. **Sistem backend SSO (Web) dari Fase 1 sudah berjalan stabil** — endpoint API autentikasi, manajemen user, dan role-based access sudah tersedia dan terdokumentasi.
-2. **Dokumentasi API** dari Fase 1 sudah tersedia (Swagger/Postman Collection) sehingga tim Android dapat langsung melakukan integrasi.
-3. **Infrastruktur server** (hosting, database, domain) sudah siap dan tidak perlu setup ulang.
-4. **KAK (Kerangka Acuan Kerja)** sedang dalam proses finalisasi oleh tim Jombang dan diharapkan selesai sebelum kick-off.
+1. **Portal web JOSS (Fase 1) sudah live dan stabil** di https://joss.jombangkab.go.id — mencakup katalog layanan publik, sistem login/register, dan integrasi SSO Keycloak.
+2. **SSO Keycloak sudah berjalan** di `sso-v2.jombangkab.go.id` dengan realm `jombangkab` dan client `joss`, menggunakan OAuth2/OIDC Authorization Code flow.
+3. **Sebagian API untuk mobile belum tersedia** — perlu pengembangan API tambahan (REST API) di sisi backend untuk mendukung fitur-fitur spesifik mobile (profil pengguna, riwayat, notifikasi, dll.).
+4. **Infrastruktur server** (hosting, database, domain, Keycloak) sudah siap dan tidak perlu setup ulang.
+5. **KAK (Kerangka Acuan Kerja)** sedang dalam proses finalisasi oleh tim Jombang dan diharapkan selesai sebelum kick-off.
+
+### Arsitektur SSO Keycloak (Existing)
+
+| **Komponen** | **Detail** |
+| --- | --- |
+| Keycloak Server | `https://sso-v2.jombangkab.go.id` |
+| Realm | `jombangkab` |
+| Client ID (Web) | `joss` |
+| Client ID (Mobile) | `joss-mobile` *(perlu didaftarkan baru di Keycloak)* |
+| Auth Flow | OAuth2 / OpenID Connect — Authorization Code + PKCE |
+| Login Action URL | `/realms/jombangkab/login-actions/authenticate` |
+| Token Endpoint | `/realms/jombangkab/protocol/openid-connect/token` |
+| UserInfo Endpoint | `/realms/jombangkab/protocol/openid-connect/userinfo` |
+| Logout Endpoint | `/realms/jombangkab/protocol/openid-connect/logout` |
+| Tema Login | `joss-sso-theme` (custom theme) |
+
+### Referensi Fitur Portal Web (Yang Harus Di-mirror ke Mobile)
+
+Berdasarkan analisis portal https://joss.jombangkab.go.id:
+
+| **No** | **Fitur Web** | **Adaptasi Mobile** |
+| --- | --- | --- |
+| 1 | Katalog layanan dengan kategori (Kepegawaian, Ketenagakerjaan, Layanan Publik) | Grid/List layanan dengan filter kategori |
+| 2 | Pencarian layanan (`/api/layanan?search=...`) | Search bar dengan real-time search |
+| 3 | Login via Keycloak SSO | Login via Keycloak OIDC + PKCE (Chrome Custom Tab / AppAuth) |
+| 4 | Register akun baru | Register via Keycloak registration flow |
+| 5 | Verifikasi KYC (Akun Belum Terverifikasi) | Status KYC di profil + notifikasi |
+| 6 | Akses aplikasi/layanan instansi | Deep link / WebView ke layanan terkait |
+| 7 | Placeholder "Unduh Aplikasi JOSS" di footer | Link langsung ke Google Play Store |
 
 ### Fokus Utama Fase 2
 
-- Pengembangan aplikasi **native/hybrid Android** yang terintegrasi penuh dengan layanan SSO Fase 1.
-- Penambahan fitur spesifik mobile: **Push Notification, Biometric Authentication, Offline Caching, Secure Token Storage**.
+- Membangun **portal mobile Android** sebagai mirror dari portal web JOSS yang sudah live.
+- Integrasi autentikasi SSO via **Keycloak OIDC + PKCE** (menggunakan library AppAuth-Android).
+- **Pengembangan API tambahan** di backend untuk mendukung fitur mobile yang belum tersedia.
+- Penambahan fitur spesifik mobile: **Push Notification, Biometric Authentication, Offline Caching**.
 - Penyesuaian UI/UX agar responsif dan *user-friendly* di perangkat mobile.
 
 ---
@@ -50,8 +84,8 @@
 | **Item**       | **Detail**                                                                                                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-2/ke-3 Oktober 2026                                                                                                                                               |
-| **Aktivitas**  | - Koordinasi internal tim & kick-off meeting bersama klien Jombang <br> - Finalisasi KAK (Kerangka Acuan Kerja) <br> - Setup arsitektur proyek Android (repository, CI/CD pipeline, code convention) <br> - Review dan mapping endpoint API SSO dari Fase 1 <br> - Penyusunan wireframe awal |
-| **Output**     | [v] Dokumen KAK Final yang disetujui kedua belah pihak <br> [v] Project Repository & Boilerplate Android (Kotlin/Java) <br> [v] Dokumen Mapping API Endpoint SSO <br> [v] Wireframe UI/UX (Low-Fidelity) |
+| **Aktivitas**  | - Koordinasi internal tim & kick-off meeting bersama klien Jombang <br> - Finalisasi KAK (Kerangka Acuan Kerja) <br> - Setup arsitektur proyek Android (repository, CI/CD pipeline, code convention) <br> - Review dan mapping endpoint API dari portal web JOSS <br> - Registrasi client `joss-mobile` di Keycloak (realm `jombangkab`) <br> - Identifikasi API yang sudah ada vs API yang perlu dibangun baru <br> - Penyusunan wireframe awal |
+| **Output**     | [v] Dokumen KAK Final yang disetujui kedua belah pihak <br> [v] Project Repository & Boilerplate Android (Kotlin) <br> [v] Client `joss-mobile` terdaftar di Keycloak <br> [v] Dokumen Gap Analysis API (existing vs required) <br> [v] Wireframe UI/UX (Low-Fidelity) |
 | **PIC**        | Project Manager, Lead Developer, UI/UX Designer                                                                                                                             |
 
 ---
@@ -72,8 +106,8 @@
 | **Item**       | **Detail**                                                                                                                                                                                                                                |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-4 Oktober / Pekan ke-1 November 2026                                                                                                                                                                                            |
-| **Aktivitas**  | - Implementasi modul autentikasi dasar (Login, Register, Lupa Password) <br> - Integrasi API SSO backend yang sudah ada ke aplikasi Android <br> - Implementasi **Token Handling (JWT)**: penyimpanan, parsing, dan validasi token <br> - Implementasi **OAuth2 / OpenID Connect** flow (jika digunakan) <br> - Setup **Retrofit/OkHttp** sebagai HTTP client dan interceptor untuk auto-attach token |
-| **Output**     | [v] Modul Login & Register terintegrasi API SSO (Alpha) <br> [v] Mekanisme JWT Token Handling berjalan <br> [v] Network Layer (Retrofit + Interceptor) terkonfigurasi <br> [v] Unit Test untuk modul autentikasi                                 |
+| **Aktivitas**  | - Implementasi autentikasi via **Keycloak OIDC + PKCE** menggunakan library **AppAuth-Android** <br> - Flow: Login → Chrome Custom Tab → Keycloak → Redirect URI → Access Token <br> - Integrasi endpoint Keycloak realm `jombangkab` (token, userinfo, logout) <br> - Implementasi **JWT Token Handling**: penyimpanan, parsing, dan validasi token <br> - Setup **Retrofit/OkHttp** + Interceptor untuk auto-attach Bearer token <br> - Pengembangan **API backend tambahan** yang belum tersedia untuk mobile |
+| **Output**     | [v] Modul Login via Keycloak OIDC+PKCE berjalan <br> [v] Register & Lupa Password via Keycloak flow <br> [v] Network Layer (Retrofit + OkHttp Interceptor) terkonfigurasi <br> [v] API backend tambahan untuk mobile (v1) <br> [v] Unit Test untuk modul autentikasi                                 |
 | **PIC**        | Lead Developer, Backend Developer (support)                                                                                                                                                                                                |
 
 ---
@@ -228,29 +262,55 @@
 
 ## V. Ruang Lingkup Teknis — Apa yang Harus Dikerjakan Tim
 
-Mengingat **SSO Web dari Fase 1 sudah selesai**, berikut adalah fokus teknis untuk Fase 2:
+Mengingat **portal web JOSS dan SSO Keycloak dari Fase 1 sudah live**, berikut adalah fokus teknis untuk Fase 2:
 
-### 1. API Integration Layer
-- Menghubungkan seluruh endpoint autentikasi SSO web ke aplikasi Android
-- Mengatur flow **OAuth2 / OpenID Connect** (jika digunakan)
+### 1. Keycloak SSO Integration (Mobile)
+- Registrasi client baru `joss-mobile` di Keycloak realm `jombangkab` (public client, PKCE enabled)
+- Implementasi **OAuth2 Authorization Code + PKCE** flow menggunakan **AppAuth-Android**
+- Login via **Chrome Custom Tab** → Keycloak login page → redirect URI → access token
+- Endpoint yang digunakan:
+  - Token: `https://sso-v2.jombangkab.go.id/realms/jombangkab/protocol/openid-connect/token`
+  - UserInfo: `https://sso-v2.jombangkab.go.id/realms/jombangkab/protocol/openid-connect/userinfo`
+  - Logout: `https://sso-v2.jombangkab.go.id/realms/jombangkab/protocol/openid-connect/logout`
 - Implementasi mekanisme **Refresh Token** otomatis
-- Setup **Retrofit + OkHttp Interceptor** untuk auto-attach Authorization header
+- Setup **Retrofit + OkHttp Interceptor** untuk auto-attach Bearer token
 
-### 2. Mobile Security
+### 2. Pengembangan API Backend Tambahan (Baru)
+API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk mendukung aplikasi mobile:
+
+| **No** | **API Endpoint** | **Method** | **Fungsi** |
+| --- | --- | --- | --- |
+| 1 | `/api/v1/mobile/profile` | GET, PUT | Data profil pengguna (nama, email, foto, NIK) |
+| 2 | `/api/v1/mobile/profile/photo` | POST | Upload foto profil |
+| 3 | `/api/v1/mobile/layanan` | GET | Daftar layanan (mirror dari `/api/layanan` web) |
+| 4 | `/api/v1/mobile/layanan/{id}` | GET | Detail layanan spesifik |
+| 5 | `/api/v1/mobile/kategori` | GET | Daftar kategori layanan |
+| 6 | `/api/v1/mobile/riwayat` | GET | Riwayat akses/aktivitas pengguna |
+| 7 | `/api/v1/mobile/notifikasi` | GET, PUT | Daftar notifikasi & tandai sudah dibaca |
+| 8 | `/api/v1/mobile/notifikasi/register` | POST | Register FCM token untuk push notification |
+| 9 | `/api/v1/mobile/kyc/status` | GET | Cek status verifikasi KYC akun |
+| 10 | `/api/v1/mobile/app-version` | GET | Cek versi terbaru aplikasi (force update) |
+
+> **Catatan:** Seluruh API mobile di atas menggunakan autentikasi Bearer token dari Keycloak. API existing dari web (`/api/layanan`) bisa di-reuse atau di-wrap ulang.
+
+### 3. Mobile Security
 - **EncryptedSharedPreferences** untuk penyimpanan token & data sensitif
 - **Certificate Pinning** (opsional, untuk keamanan komunikasi HTTPS)
 - **ProGuard/R8** obfuscation untuk proteksi APK
 - **Biometric Authentication** (AndroidX Biometric Library)
 
-### 3. Android-Specific Features
+### 4. Android-Specific Features
 - **Push Notification** via Firebase Cloud Messaging (FCM)
 - **Offline Caching** menggunakan Room Database / SQLite
 - **Connectivity Checker** untuk mode online/offline
-- **Deep Linking** (opsional, untuk navigasi dari notifikasi atau link eksternal)
+- **Deep Linking** untuk navigasi dari notifikasi atau link eksternal
+- **In-App WebView** untuk membuka layanan instansi yang belum punya native screen
 
-### 4. UI/UX Adaptation
-- Desain responsif untuk berbagai ukuran layar Android
+### 5. UI/UX Adaptation (Mirror Portal Web)
+- Adaptasi layout portal web JOSS ke mobile-friendly design
 - Implementasi **Material Design 3** guidelines
+- Halaman utama: Katalog layanan dengan kategori (Kepegawaian, Ketenagakerjaan, Layanan Publik)
+- Search layanan dengan debounce (seperti di web)
 - Animasi transisi halaman yang smooth
 - Dark Mode support (opsional)
 
