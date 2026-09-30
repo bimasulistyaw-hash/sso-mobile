@@ -291,7 +291,6 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 | 9 | `/api/v1/mobile/kyc/status` | GET | Cek status verifikasi KYC akun |
 | 10 | `/api/v1/mobile/app-version` | GET | Cek versi terbaru aplikasi (force update) |
 
-> **Catatan:** Seluruh API mobile di atas menggunakan autentikasi Bearer token dari Keycloak. API existing dari web (`/api/layanan`) bisa di-reuse atau di-wrap ulang.
 
 ### 3. Mobile Security
 - **EncryptedSharedPreferences** untuk penyimpanan token & data sensitif
