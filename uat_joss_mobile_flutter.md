@@ -39,12 +39,10 @@ Berikan tanda centang (✓) pada kolom **Status** sesuai dengan hasil pengujian:
 | 1.7 | Fitur Auto-Login (Tutup & buka app) | Aplikasi langsung masuk ke Dashboard tanpa meminta login ulang (Sesi tersimpan). | | |
 | 1.8 | Fitur Logout (Keluar) | Sesi dihapus (di app & Keycloak), kembali ke halaman Login awal. | | |
 
-### 2. Modul Keamanan & Biometrik
+### 2. Modul Keamanan & Token Management
 | No | Skenario Pengujian | Ekspektasi Hasil | Status (Pass/Fail) | Catatan |
 |:---|:---|:---|:---:|:---|
-| 2.1 | Aktivasi login Biometrik (Sidik Jari/Face ID) | Sistem meminta verifikasi biometrik dan berhasil menyimpannya. | | |
-| 2.2 | Login menggunakan Biometrik | Berhasil masuk ke Dashboard hanya dengan scan biometrik. | | |
-| 2.3 | Validasi Expired Token | Saat token habis, mekanisme *Refresh Token* berjalan otomatis tanpa *force logout*. | | |
+| 2.1 | Validasi Expired Token | Saat token habis, mekanisme *Refresh Token* berjalan otomatis tanpa *force logout*. | | |
 
 ### 3. Modul Dashboard & Navigasi Utama
 | No | Skenario Pengujian | Ekspektasi Hasil | Status (Pass/Fail) | Catatan |

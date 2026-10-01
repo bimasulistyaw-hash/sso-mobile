@@ -57,7 +57,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 - Membangun **portal mobile multi-platform (Android & iOS)** menggunakan framework **Flutter** sebagai mirror dari portal web JOSS yang sudah live.
 - Integrasi autentikasi SSO via **Keycloak OIDC + PKCE** (menggunakan library AppAuth untuk Flutter).
 - **Pengembangan API tambahan** di backend untuk mendukung fitur mobile yang belum tersedia.
-- Penambahan fitur spesifik mobile: **Push Notification, Biometric Authentication, Offline Caching**.
+- Penambahan fitur spesifik mobile: **Push Notification, Offline Caching**.
 - Penyesuaian UI/UX agar responsif dan *user-friendly* di berbagai ukuran layar smartphone (Android/iOS).
 
 ---
@@ -161,13 +161,13 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.VIII — Minggu 8: Biometrik, Offline Caching, & Optimasi
+#### III.VIII — Minggu 8: Offline Caching & Optimasi
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 Desember 2026                                                                                                                                                                                                                                          |
-| **Aktivitas**  | - Implementasi **Biometric Authentication** (Fingerprint / Face ID) menggunakan library flutter_local_auth <br> - Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> - Optimasi performa aplikasi: memory, network call, dan battery usage <br> - Implementasi **connectivity checker** (online/offline mode) |
-| **Output**     | [v] Fitur Autentikasi Biometrik (Sidik Jari / Wajah) <br> [v] Local Database & Offline Caching <br> [v] Connectivity-aware UX (indikator online/offline) <br> [v] Laporan optimasi performa aplikasi                                                                         |
+| **Aktivitas**  | - Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> - Optimasi performa aplikasi: memory, network call, dan battery usage <br> - Implementasi **connectivity checker** (online/offline mode) |
+| **Output**     | [v] Local Database & Offline Caching <br> [v] Connectivity-aware UX (indikator online/offline) <br> [v] Laporan optimasi performa aplikasi                                                                         |
 | **PIC**        | Lead Developer, Flutter Developer                                                                                                                                                                                                                                        |
 
 ---
@@ -243,7 +243,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **5** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) | Dashboard & Navigasi, Komponen UI | | <span style="background:#16A34A;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | | |
 | **6** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi | Modul Profil, Riwayat Akses, Layanan v1 | | <span style="background:#16A34A;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | | |
 | **7** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi | Modul Notifikasi & Pengaturan Akun | | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px 0 0 4px;">■■</span> | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:0 4px 4px 0;">■■</span> | |
-| **8** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Des Pekan 1–2 | Biometrik (Fingerprint/Face ID), offline caching (Room DB) | Fitur Biometrik, Local DB, Optimasi Performa | | | <span style="background:#16A34A;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | |
+| **8** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Des Pekan 1–2 | Offline caching (Local DB), optimasi performa | Local DB, Optimasi Performa | | | <span style="background:#16A34A;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | |
 | **9** | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px;">C</span> Testing | Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing | Test Case (50+ skenario), APK Alpha, Laporan Bug | | | <span style="background:#EA580C;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | |
 | **10** | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px;">C</span> Testing | Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback | BA UAT, Evaluasi Perbaikan, APK Beta | | | <span style="background:#EA580C;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | |
 | **11** | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px;">C</span> Deployment | Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate | Laporan ToT, Panduan Penggunaan, APK RC | | | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px 0 0 4px;">■■</span> | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:0 4px 4px 0;">■■</span> |
@@ -254,7 +254,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Bulan** | **W1** | **W2** | **W3** | **W4** | **Milestone Utama** |
 | --- | --- | --- | --- | --- | --- |
 | **Bulan 1** (Okt–Nov) | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Kick-off & KAK | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Desain UI/UX | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Integrasi SSO | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Manajemen Sesi | [v] Autentikasi SSO Mobile berjalan |
-| **Bulan 2** (Nov–Des) | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Dashboard | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Modul Layanan | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Notifikasi | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Biometrik & Cache | [v] Seluruh fitur utama selesai |
+| **Bulan 2** (Nov–Des) | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Dashboard | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Modul Layanan | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Notifikasi | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Offline Cache | [v] Seluruh fitur utama selesai |
 | **Bulan 3** (Des–Jan) | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> Alpha Test | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> UAT Klien | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> ToT & Build Final | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> Rilis & BAST | [v] Aplikasi live & proyek serah terima |
 
 ---
@@ -295,7 +295,6 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 - **EncryptedSharedPreferences** untuk penyimpanan token & data sensitif
 - **Certificate Pinning** (opsional, untuk keamanan komunikasi HTTPS)
 - **ProGuard/R8** obfuscation untuk proteksi APK
-- **Biometric Authentication** (menggunakan library `flutter_local_auth`)
 
 ### 4. Mobile-Specific Features
 - **Push Notification** via Firebase Cloud Messaging (FCM)
