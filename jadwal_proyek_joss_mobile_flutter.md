@@ -19,8 +19,10 @@
 | **Protokol Autentikasi**    | OAuth2 / OpenID Connect (Authorization Code Flow)                          |
 
 ---
----
-
+---
+
+
+
 
 ## II. Rincian Jadwal & Output per Minggu
 
@@ -210,11 +212,12 @@
 | **PIC**        | Project Manager, Lead Developer, Perwakilan Klien                                                                                                                                                                                                                                                                       |
 
 ---
-## III. Daftar Modul Aplikasi JOSS Mobile
+## III. Daftar Modul Aplikasi JOSS Mobile
+
 
 Berikut adalah daftar lengkap modul yang akan dikembangkan dalam aplikasi JOSS Mobile (Fase 2):
 
-### 🔐 Autentikasi & Keamanan
+### Autentikasi & Keamanan
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
@@ -225,14 +228,14 @@ Berikut adalah daftar lengkap modul yang akan dikembangkan dalam aplikasi JOSS M
 | 5 | `AUTH-05` | **Lupa Password / Reset Password** | Input email → Keycloak kirim link reset → form ganti password baru |
 | 6 | `AUTH-06` | **Manajemen Sesi & Token** | Auto-login, refresh token otomatis, logout (revoke session), secure storage |
 
-### 🏠 Halaman Utama
+### Halaman Utama
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
 | 7 | `HOME-01` | **Dashboard** | Halaman utama setelah login, summary cards, quick-access menu |
 | 8 | `HOME-02` | **Navigasi Utama** | Bottom Navigation Bar / Drawer, routing antar halaman |
 
-### 📋 Layanan
+### Layanan
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
@@ -241,7 +244,7 @@ Berikut adalah daftar lengkap modul yang akan dikembangkan dalam aplikasi JOSS M
 | 11 | `SVC-03` | **Pencarian Layanan** | Search bar dengan real-time search (debounce) |
 | 12 | `SVC-04` | **Akses Layanan Instansi** | Buka web-app layanan via Chrome Custom Tab / WebView |
 
-### 👤 Profil & Akun
+### Profil & Akun
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
@@ -250,26 +253,26 @@ Berikut adalah daftar lengkap modul yang akan dikembangkan dalam aplikasi JOSS M
 | 15 | `USR-03` | **Ubah Password** | Ganti password dari dalam aplikasi |
 | 16 | `USR-04` | **Verifikasi KYC** | Cek status KYC, upload dokumen KYC (jika diperlukan) |
 
-### 🔔 Notifikasi
+### Notifikasi
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
 | 17 | `NOTIF-01` | **Push Notification** | Integrasi Firebase Cloud Messaging (FCM), register token |
 | 18 | `NOTIF-02` | **Notification Center** | Daftar notifikasi in-app, tandai sudah dibaca, hapus notifikasi |
 
-### 📜 Riwayat
+### Riwayat
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
 | 19 | `HIST-01` | **Riwayat Aktivitas** | Log riwayat akses/aktivitas pengguna di aplikasi |
 
-### ⚙️ Pengaturan
+### Pengaturan
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
 | 20 | `SET-01` | **Pengaturan Aplikasi** | Pengaturan notifikasi, tentang aplikasi, versi, kebijakan privasi |
 
-### 🛠️ Sistem & Infrastruktur
+### Sistem & Infrastruktur
 
 | **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
 |---|---|---|---|
