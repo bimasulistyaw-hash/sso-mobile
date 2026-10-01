@@ -74,22 +74,22 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **FASE B:** Pengembangan Fitur Utama & Layanan | 5–8 (4 Minggu) | Dashboard, modul layanan, notifikasi, offline cache |
 | **FASE C:** Testing, ToT, & Deployment | 9–12 (4 Minggu) | Alpha/UAT testing, pelatihan, rilis & serah terima |
 
-### Tabel Rincian Aktivitas Mingguan
+### Tabel Detail Gantt Chart — 12 Minggu
 
-| **Mg** | **Fase** | **Periode** | **Aktivitas & Modul** | **Output / Deliverable** |
-| --- | --- | --- | --- | --- |
-| **1** | **[A]** Perencanaan/SSO | Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | KAK Final, Boilerplate Repo, Wireframe |
-| **2** | **[A]** Perencanaan/SSO | Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | Desain UI/UX Final, Prototype Interaktif |
-| **3** | **[A]** Perencanaan/SSO | Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling <br> *(Modul SSO (Keycloak, AppAuth))* | Modul Login & SSO (Alpha), Network Layer |
-| **4** | **[A]** Perencanaan/SSO | Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* | Modul Sesi & Keamanan, Auto-Login |
-| **5** | **[B]** Core Features | Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) <br> *(Modul Dashboard & Navigasi)* | Dashboard & Navigasi, Komponen UI |
-| **6** | **[B]** Core Features | Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi <br> *(Modul Profil, Riwayat, Layanan)* | Modul Profil, Riwayat Akses, Layanan v1 |
-| **7** | **[B]** Core Features | Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* | Modul Notifikasi & Pengaturan Akun |
-| **8** | **[B]** Core Features | Des Pekan 1–2 | Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* | Local DB, Optimasi Performa |
-| **9** | **[C]** Testing/Deploy | Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* | Test Case (50+ skenario), APK Alpha, Laporan Bug |
-| **10** | **[C]** Testing/Deploy | Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* | BA UAT, Evaluasi Perbaikan, APK Beta |
-| **11** | **[C]** Testing/Deploy | Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* | Laporan ToT, Panduan Penggunaan, APK RC |
-| **12** | **[C]** Testing/Deploy | Jan Pekan 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* | Aplikasi Live, Dokumentasi Akhir, BAST |
+| **Mg** | **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** | **Jan** |
+| --- | --- | --- | --- | --- | --- | --- |
+| **1** | **[A]**<br>Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | ███ |  |  |  |
+| **2** | **[A]**<br>Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | ███ |  |  |  |
+| **3** | **[A]**<br>Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling <br> *(Modul SSO (Keycloak, AppAuth))* | ██ | ██ |  |  |
+| **4** | **[A]**<br>Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* |  | ███ |  |  |
+| **5** | **[B]**<br>Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) <br> *(Modul Dashboard & Navigasi)* |  | ███ |  |  |
+| **6** | **[B]**<br>Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi <br> *(Modul Profil, Riwayat, Layanan)* |  | ███ |  |  |
+| **7** | **[B]**<br>Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* |  | ██ | ██ |  |
+| **8** | **[B]**<br>Des Pekan 1–2 | Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* |  |  | ███ |  |
+| **9** | **[C]**<br>Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | ███ |  |
+| **10** | **[C]**<br>Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | ███ |  |
+| **11** | **[C]**<br>Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | ██ | ██ |
+| **12** | **[C]**<br>Jan Pekan 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* |  |  |  | ███ |
 
 ### Visualisasi Progress per Bulan
 
