@@ -1,6 +1,6 @@
-# Jadwal & Rincian Output Pengembangan Aplikasi JOSS Mobile Android
+# Jadwal & Rincian Output Pengembangan Aplikasi JOSS Mobile (Flutter)
 
-## Proyek: Aplikasi JOSS Mobile Android — SSO Kabupaten Jombang (Fase 2)
+## Proyek: Aplikasi JOSS Mobile (Android & iOS) — SSO Kabupaten Jombang (Fase 2)
 
 ---
 
@@ -8,9 +8,9 @@
 
 | **Item**                    | **Detail**                                                                 |
 | --------------------------- | -------------------------------------------------------------------------- |
-| **Nama Proyek**             | JOSS Mobile Android (Jombang One Stop Service)                             |
+| **Nama Proyek**             | JOSS Mobile (Jombang One Stop Service)                             |
 | **Klien**                   | Pemerintah Kabupaten Jombang — Dinas Komunikasi dan Informatika            |
-| **Fase**                    | Fase 2 — Pengembangan Portal Aplikasi Mobile Android                       |
+| **Fase**                    | Fase 2 — Pengembangan Portal Aplikasi Mobile (Flutter: Android & iOS)      |
 | **Durasi**                  | 3 Bulan (12 Minggu Efektif)                                               |
 | **Estimasi Mulai**          | Pekan ke-2 s.d. ke-3 Oktober 2026 *(estimasi mundur 1–2 minggu dari 1 Oktober)* |
 | **Estimasi Selesai**        | Pekan ke-2 s.d. ke-3 Januari 2027                                         |
@@ -50,15 +50,15 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | 4 | Register akun baru | Register via Keycloak registration flow |
 | 5 | Verifikasi KYC (Akun Belum Terverifikasi) | Status KYC di profil + notifikasi |
 | 6 | Akses aplikasi/layanan instansi | Deep link / WebView ke layanan terkait |
-| 7 | Placeholder "Unduh Aplikasi JOSS" di footer | Link langsung ke Google Play Store |
+| 7 | Placeholder "Unduh Aplikasi JOSS" di footer | Link langsung ke Google Play Store & Apple App Store |
 
 ### Fokus Utama Fase 2
 
-- Membangun **portal mobile Android** sebagai mirror dari portal web JOSS yang sudah live.
-- Integrasi autentikasi SSO via **Keycloak OIDC + PKCE** (menggunakan library AppAuth-Android).
+- Membangun **portal mobile multi-platform (Android & iOS)** menggunakan framework **Flutter** sebagai mirror dari portal web JOSS yang sudah live.
+- Integrasi autentikasi SSO via **Keycloak OIDC + PKCE** (menggunakan library AppAuth untuk Flutter).
 - **Pengembangan API tambahan** di backend untuk mendukung fitur mobile yang belum tersedia.
 - Penambahan fitur spesifik mobile: **Push Notification, Biometric Authentication, Offline Caching**.
-- Penyesuaian UI/UX agar responsif dan *user-friendly* di perangkat mobile.
+- Penyesuaian UI/UX agar responsif dan *user-friendly* di berbagai ukuran layar smartphone (Android/iOS).
 
 ---
 
@@ -74,7 +74,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ### [FASE 1] BULAN 1 — Perencanaan, Integrasi API, & Autentikasi SSO Mobile
 
-> **Fokus:** Menyiapkan pondasi aplikasi dan melakukan integrasi core SSO ke platform Android.
+> **Fokus:** Menyiapkan pondasi aplikasi dan melakukan integrasi core SSO ke platform mobile (Android & iOS).
 
 ---
 
@@ -83,8 +83,8 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-2/ke-3 Oktober 2026                                                                                                                                               |
-| **Aktivitas**  | - Koordinasi internal tim & kick-off meeting bersama klien Jombang <br> - Finalisasi KAK (Kerangka Acuan Kerja) <br> - Setup arsitektur proyek Android (repository, CI/CD pipeline, code convention) <br> - Review dan mapping endpoint API dari portal web JOSS <br> - Registrasi client `joss-mobile` di Keycloak (realm `jombangkab`) <br> - Identifikasi API yang sudah ada vs API yang perlu dibangun baru <br> - Penyusunan wireframe awal |
-| **Output**     | [v] Dokumen KAK Final yang disetujui kedua belah pihak <br> [v] Project Repository & Boilerplate Android (Kotlin) <br> [v] Client `joss-mobile` terdaftar di Keycloak <br> [v] Dokumen Gap Analysis API (existing vs required) <br> [v] Wireframe UI/UX (Low-Fidelity) |
+| **Aktivitas**  | - Koordinasi internal tim & kick-off meeting bersama klien Jombang <br> - Finalisasi KAK (Kerangka Acuan Kerja) <br> - Setup arsitektur proyek Flutter (Android & iOS, repository, CI/CD pipeline, code convention) <br> - Review dan mapping endpoint API dari portal web JOSS <br> - Registrasi client `joss-mobile` di Keycloak (realm `jombangkab`) <br> - Identifikasi API yang sudah ada vs API yang perlu dibangun baru <br> - Penyusunan wireframe awal |
+| **Output**     | [v] Dokumen KAK Final yang disetujui kedua belah pihak <br> [v] Project Repository & Boilerplate Flutter (Dart) <br> [v] Client `joss-mobile` terdaftar di Keycloak <br> [v] Dokumen Gap Analysis API (existing vs required) <br> [v] Wireframe UI/UX (Low-Fidelity) |
 | **PIC**        | Project Manager, Lead Developer, UI/UX Designer                                                                                                                             |
 
 ---
@@ -105,8 +105,8 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                                |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-4 Oktober / Pekan ke-1 November 2026                                                                                                                                                                                            |
-| **Aktivitas**  | - Implementasi autentikasi via **Keycloak OIDC + PKCE** menggunakan library **AppAuth-Android** <br> - Flow: Login → Chrome Custom Tab → Keycloak → Redirect URI → Access Token <br> - Integrasi endpoint Keycloak realm `jombangkab` (token, userinfo, logout) <br> - Implementasi **JWT Token Handling**: penyimpanan, parsing, dan validasi token <br> - Setup **Retrofit/OkHttp** + Interceptor untuk auto-attach Bearer token <br> - Pengembangan **API backend tambahan** yang belum tersedia untuk mobile |
-| **Output**     | [v] Modul Login via Keycloak OIDC+PKCE berjalan <br> [v] Register & Lupa Password via Keycloak flow <br> [v] Network Layer (Retrofit + OkHttp Interceptor) terkonfigurasi <br> [v] API backend tambahan untuk mobile (v1) <br> [v] Unit Test untuk modul autentikasi                                 |
+| **Aktivitas**  | - Implementasi autentikasi via **Keycloak OIDC + PKCE** menggunakan library **flutter_appauth** <br> - Flow: Login → In-App Browser → Keycloak → Redirect URI → Access Token <br> - Integrasi endpoint Keycloak realm `jombangkab` (token, userinfo, logout) <br> - Implementasi **JWT Token Handling**: penyimpanan, parsing, dan validasi token <br> - Setup **Dio/HTTP** + Interceptor untuk auto-attach Bearer token <br> - Pengembangan **API backend tambahan** yang belum tersedia untuk mobile |
+| **Output**     | [v] Modul Login via Keycloak OIDC+PKCE berjalan <br> [v] Register & Lupa Password via Keycloak flow <br> [v] Network Layer (Dio / HTTP Interceptor) terkonfigurasi <br> [v] API backend tambahan untuk mobile (v1) <br> [v] Unit Test untuk modul autentikasi                                 |
 | **PIC**        | Lead Developer, Backend Developer (support)                                                                                                                                                                                                |
 
 ---
@@ -116,7 +116,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 November 2026                                                                                                                                                                                                |
-| **Aktivitas**  | - Implementasi **EncryptedSharedPreferences** untuk penyimpanan token & kredensial yang aman <br> - Implementasi fitur **Auto-Login** (persistent session) <br> - Implementasi fitur **Logout** (clear token, revoke session di server) <br> - Implementasi mekanisme **Refresh Token** otomatis <br> - Penanganan error & expired token (redirect ke halaman login) |
+| **Aktivitas**  | - Implementasi **Flutter Secure Storage** untuk penyimpanan token & kredensial yang aman <br> - Implementasi fitur **Auto-Login** (persistent session) <br> - Implementasi fitur **Logout** (clear token, revoke session di server) <br> - Implementasi mekanisme **Refresh Token** otomatis <br> - Penanganan error & expired token (redirect ke halaman login) |
 | **Output**     | [v] Modul Manajemen Sesi & Keamanan Akses lengkap <br> [v] Fitur Auto-Login & Persistent Session <br> [v] Mekanisme Refresh Token otomatis <br> [v] Secure Storage untuk data sensitif                                              |
 | **PIC**        | Lead Developer, Security Reviewer                                                                                                                                                                                              |
 
@@ -135,7 +135,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Periode**    | Pekan ke-2/ke-3 November 2026                                                                                                                                                                                 |
 | **Aktivitas**  | - Pengembangan halaman **Dashboard Utama** setelah login berhasil <br> - Implementasi **Bottom Navigation / Drawer Navigation** <br> - Integrasi data ringkasan (summary cards, statistik, atau quick-access menu) <br> - Implementasi **pull-to-refresh** dan loading state |
 | **Output**     | [v] Halaman Dashboard Utama aplikasi <br> [v] Sistem Navigasi Aplikasi (Bottom Nav / Drawer) <br> [v] Komponen UI reusable (cards, lists, loading indicators)                                                       |
-| **PIC**        | Android Developer, UI/UX Designer                                                                                                                                                                               |
+| **PIC**        | Flutter Developer, UI/UX Designer                                                                                                                                                                               |
 
 ---
 
@@ -146,7 +146,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Periode**    | Pekan ke-3/ke-4 November 2026                                                                                                                                                                                                                                      |
 | **Aktivitas**  | - Pengembangan modul layanan utama sesuai kebutuhan Jombang, meliputi: <br> &nbsp;&nbsp;• **Profil Warga/Pengguna** (view & edit profil, upload foto) <br> &nbsp;&nbsp;• **Riwayat Akses/Aktivitas** pengguna <br> &nbsp;&nbsp;• **Integrasi Layanan Instansi** terkait (jika ada endpoint layanan publik) <br> - Integrasi API layanan dengan error handling yang proper |
 | **Output**     | [v] Modul Profil Pengguna (View, Edit, Upload Foto) <br> [v] Modul Riwayat Akses / Log Aktivitas <br> [v] Modul Layanan Instansi (Versi 1) <br> [v] Integrasi API Layanan berjalan                                                                                       |
-| **PIC**        | Android Developer, Backend Developer (support API)                                                                                                                                                                                                                   |
+| **PIC**        | Flutter Developer, Backend Developer (support API)                                                                                                                                                                                                                   |
 
 ---
 
@@ -157,7 +157,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Periode**    | Pekan ke-4 November / Pekan ke-1 Desember 2026                                                                                                                                                                                                           |
 | **Aktivitas**  | - Integrasi **Firebase Cloud Messaging (FCM)** untuk push notification <br> - Implementasi notifikasi: pengumuman, update layanan, dan reminder <br> - Pengembangan halaman **Pengaturan Akun** (ubah password, pengaturan notifikasi, bahasa, tema) <br> - Implementasi **in-app notification center** (daftar notifikasi yang diterima) |
 | **Output**     | [v] Modul Push Notification (FCM) terintegrasi dan berfungsi <br> [v] In-App Notification Center <br> [v] Halaman Pengaturan Akun Pengguna <br> [v] Pengaturan preferensi notifikasi                                                                            |
-| **PIC**        | Android Developer, Backend Developer (FCM setup)                                                                                                                                                                                                          |
+| **PIC**        | Flutter Developer, Backend Developer (FCM setup)                                                                                                                                                                                                          |
 
 ---
 
@@ -166,9 +166,9 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 Desember 2026                                                                                                                                                                                                                                          |
-| **Aktivitas**  | - Implementasi **Biometric Authentication** (Fingerprint / Face ID) menggunakan AndroidX Biometric Library <br> - Implementasi **Local Database** (Room Database / SQLite) untuk offline caching data penting <br> - Optimasi performa aplikasi: memory, network call, dan battery usage <br> - Implementasi **connectivity checker** (online/offline mode) |
+| **Aktivitas**  | - Implementasi **Biometric Authentication** (Fingerprint / Face ID) menggunakan library flutter_local_auth <br> - Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> - Optimasi performa aplikasi: memory, network call, dan battery usage <br> - Implementasi **connectivity checker** (online/offline mode) |
 | **Output**     | [v] Fitur Autentikasi Biometrik (Sidik Jari / Wajah) <br> [v] Local Database & Offline Caching <br> [v] Connectivity-aware UX (indikator online/offline) <br> [v] Laporan optimasi performa aplikasi                                                                         |
-| **PIC**        | Lead Developer, Android Developer                                                                                                                                                                                                                                        |
+| **PIC**        | Lead Developer, Flutter Developer                                                                                                                                                                                                                                        |
 
 ---
 
@@ -183,8 +183,8 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-2/ke-3 Desember 2026                                                                                                                                                                                                                                |
-| **Aktivitas**  | - Pelaksanaan **Internal/Alpha Testing** oleh tim pengembang <br> - Penyusunan **Test Case Document** & skenario UAT <br> - Identifikasi dan perbaikan bug (critical & major) <br> - Testing kompatibilitas di berbagai perangkat Android (API level 24–34) <br> - Security testing dasar (token exposure, data leakage) |
-| **Output**     | [v] Dokumen Test Case (minimal 50 skenario) <br> [v] Laporan Bug Fixing (Critical & Major resolved) <br> [v] APK Internal Build (Alpha) untuk distribusi testing <br> [v] Laporan Compatibility Testing                                                              |
+| **Aktivitas**  | - Pelaksanaan **Internal/Alpha Testing** oleh tim pengembang <br> - Penyusunan **Test Case Document** & skenario UAT <br> - Identifikasi dan perbaikan bug (critical & major) <br> - Testing kompatibilitas di berbagai perangkat Android & iOS <br> - Security testing dasar (token exposure, data leakage) |
+| **Output**     | [v] Dokumen Test Case (minimal 50 skenario) <br> [v] Laporan Bug Fixing (Critical & Major resolved) <br> [v] APK/IPA Internal Build (Alpha) untuk distribusi testing <br> [v] Laporan Compatibility Testing                                                              |
 | **PIC**        | QA Tester, Lead Developer, Seluruh Tim Dev                                                                                                                                                                                                                     |
 
 ---
@@ -195,7 +195,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-3/ke-4 Desember 2026                                                                                                                                                                                                                                                   |
 | **Aktivitas**  | - Pelaksanaan **User Acceptance Testing (UAT)** bersama tim/klien Jombang <br> - Pengumpulan feedback dan catatan evaluasi dari pengguna <br> - Penyempurnaan UI/UX berdasarkan hasil UAT <br> - Perbaikan bug minor yang ditemukan saat UAT <br> - Persiapan **materi ToT** (Training of Trainer): modul panduan, video tutorial singkat |
-| **Output**     | [v] Berita Acara (BA) Pelaksanaan UAT — ditandatangani kedua pihak <br> [v] Dokumen Catatan Evaluasi & Perbaikan UAT <br> [v] APK Build (Beta — Post-UAT) <br> [v] Draft Modul Panduan Penggunaan Aplikasi                                                                             |
+| **Output**     | [v] Berita Acara (BA) Pelaksanaan UAT — ditandatangani kedua pihak <br> [v] Dokumen Catatan Evaluasi & Perbaikan UAT <br> [v] APK/IPA Build (Beta — Post-UAT) <br> [v] Draft Modul Panduan Penggunaan Aplikasi                                                                             |
 | **PIC**        | Project Manager, QA Tester, Tim Dev, Perwakilan Klien                                                                                                                                                                                                                            |
 
 ---
@@ -206,7 +206,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Periode**    | Pekan ke-4 Desember 2026 / Pekan ke-1 Januari 2027                                                                                                                                                                                                                            |
 | **Aktivitas**  | - Pelaksanaan kegiatan **ToT (Training of Trainer)** untuk pengelola/admin di Jombang <br> - Materi ToT mencakup: cara instalasi, penggunaan fitur, troubleshooting dasar, dan pengelolaan akun <br> - Finalisasi build aplikasi untuk rilis (Release Candidate) <br> - Penyusunan **Dokumentasi Teknis** (arsitektur, API docs, deployment guide) |
-| **Output**     | [v] Laporan Pelaksanaan ToT (daftar hadir, dokumentasi foto, materi) <br> [v] Modul Panduan Penggunaan Aplikasi (Final) <br> [v] Master APK / App Bundle (Release Candidate) <br> [v] Dokumentasi Teknis Aplikasi                                                                     |
+| **Output**     | [v] Laporan Pelaksanaan ToT (daftar hadir, dokumentasi foto, materi) <br> [v] Modul Panduan Penggunaan Aplikasi (Final) <br> [v] Master App Bundle (AAB) & Master IPA (Release Candidate) <br> [v] Dokumentasi Teknis Aplikasi                                                                     |
 | **PIC**        | Project Manager, Lead Developer, Trainer                                                                                                                                                                                                                                        |
 
 ---
@@ -216,8 +216,8 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 Januari 2027                                                                                                                                                                                                                                                                                          |
-| **Aktivitas**  | - Proses **submission ke Google Play Store** (atau distribusi internal via APK/MDM instansi) <br> - Monitoring pasca-rilis (crash reporting via Firebase Crashlytics) <br> - Penyusunan dokumen penutupan proyek <br> - Penandatanganan **Berita Acara Serah Terima (BAST)** <br> - Handover source code, dokumentasi, dan akses repository ke pihak Jombang |
-| **Output**     | [v] Aplikasi JOSS Mobile tayang di Google Play Store / terdistribusi <br> [v] Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> [v] Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak <br> [v] Handover seluruh aset proyek                                                                  |
+| **Aktivitas**  | - Proses **submission ke Google Play Store & Apple App Store** (atau distribusi internal MDM instansi) <br> - Monitoring pasca-rilis (crash reporting via Firebase Crashlytics) <br> - Penyusunan dokumen penutupan proyek <br> - Penandatanganan **Berita Acara Serah Terima (BAST)** <br> - Handover source code, dokumentasi, dan akses repository ke pihak Jombang |
+| **Output**     | [v] Aplikasi JOSS Mobile tayang di Play Store & App Store <br> [v] Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> [v] Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak <br> [v] Handover seluruh aset proyek                                                                  |
 | **PIC**        | Project Manager, Lead Developer, Perwakilan Klien                                                                                                                                                                                                                                                                       |
 
 ---
@@ -265,7 +265,7 @@ Mengingat **portal web JOSS dan SSO Keycloak dari Fase 1 sudah live**, berikut a
 
 ### 1. Keycloak SSO Integration (Mobile)
 - Registrasi client baru `joss-mobile` di Keycloak realm `jombangkab` (public client, PKCE enabled)
-- Implementasi **OAuth2 Authorization Code + PKCE** flow menggunakan **AppAuth-Android**
+- Implementasi **OAuth2 Authorization Code + PKCE** flow menggunakan **flutter_appauth**
 - Login via **Chrome Custom Tab** → Keycloak login page → redirect URI → access token
 - Endpoint yang digunakan:
   - Token: `https://sso-v2.jombangkab.go.id/realms/jombangkab/protocol/openid-connect/token`
@@ -295,9 +295,9 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 - **EncryptedSharedPreferences** untuk penyimpanan token & data sensitif
 - **Certificate Pinning** (opsional, untuk keamanan komunikasi HTTPS)
 - **ProGuard/R8** obfuscation untuk proteksi APK
-- **Biometric Authentication** (AndroidX Biometric Library)
+- **Biometric Authentication** (menggunakan library `flutter_local_auth`)
 
-### 4. Android-Specific Features
+### 4. Mobile-Specific Features
 - **Push Notification** via Firebase Cloud Messaging (FCM)
 - **Offline Caching** menggunakan Room Database / SQLite
 - **Connectivity Checker** untuk mode online/offline
@@ -339,13 +339,13 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 | ---------------------------------------------- | ----------------------------------------------------------------------------- |
 | Keterlambatan finalisasi KAK                   | Paralel dengan setup teknis di Minggu 1                                       |
 | Perubahan requirement di tengah proyek         | Change Request formal dengan impact analysis                                  |
-| Kompatibilitas perangkat Android beragam       | Testing di minimal 5 perangkat berbeda (API 24–34)                            |
-| Kendala submission Google Play Store           | Persiapan akun developer & compliance sejak Minggu 9                          |
+| Kompatibilitas perangkat Android & iOS beragam       | Testing di minimal 5 perangkat berbeda (iOS & Android)                            |
+| Kendala submission Play Store & App Store           | Persiapan akun developer & compliance sejak Minggu 9                          |
 | Ketergantungan pada stabilitas API SSO Fase 1  | Monitoring uptime API & koordinasi rutin dengan tim backend                   |
 
 ---
 
-> **Dokumen ini disusun sebagai acuan jadwal dan output pengembangan aplikasi JOSS Mobile Android (Fase 2) untuk Proyek SSO Kabupaten Jombang. Jadwal bersifat fleksibel dan dapat disesuaikan berdasarkan kesepakatan bersama antara tim pengembang dan pihak Kabupaten Jombang.**
+> **Dokumen ini disusun sebagai acuan jadwal dan output pengembangan aplikasi JOSS Mobile (Fase 2) untuk Proyek SSO Kabupaten Jombang. Jadwal bersifat fleksibel dan dapat disesuaikan berdasarkan kesepakatan bersama antara tim pengembang dan pihak Kabupaten Jombang.**
 
 ---
 

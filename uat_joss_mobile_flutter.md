@@ -1,12 +1,12 @@
 # Dokumen User Acceptance Testing (UAT)
-## Aplikasi JOSS Mobile Android (Jombang One Stop Service) - Fase 2
+## Aplikasi JOSS Mobile (Flutter: Android & iOS) - Fase 2
 
 ---
 
 ## I. Informasi Pengujian
 | **Item**               | **Detail**                                                                 |
 | ---------------------- | -------------------------------------------------------------------------- |
-| **Nama Proyek**        | JOSS Mobile Android                                                        |
+| **Nama Proyek**        | JOSS Mobile (Jombang One Stop Service)                                                        |
 | **Klien**              | Pemerintah Kabupaten Jombang — Dinas Komunikasi dan Informatika            |
 | **Tanggal Pengujian**  | ..................................................                         |
 | **Lokasi Pengujian**   | ..................................................                         |
@@ -72,7 +72,7 @@ Berikan tanda centang (✓) pada kolom **Status** sesuai dengan hasil pengujian:
 ### 6. Modul Notifikasi (Firebase FCM) & Riwayat
 | No | Skenario Pengujian | Ekspektasi Hasil | Status (Pass/Fail) | Catatan |
 |:---|:---|:---|:---:|:---|
-| 6.1 | Menerima Push Notification (App Tertutup) | Muncul pop-up notifikasi di bar notifikasi sistem Android. | | |
+| 6.1 | Menerima Push Notification (App Tertutup) | Muncul pop-up notifikasi di bar notifikasi sistem Android/iOS. | | |
 | 6.2 | Menerima In-App Notification (App Terbuka) | Muncul badge/indikator notifikasi baru di tab Notifikasi. | | |
 | 6.3 | Interaksi Notifikasi | Saat notifikasi diklik, aplikasi terbuka dan mengarah ke halaman yang sesuai. | | |
 | 6.4 | Halaman Riwayat Akses | Menampilkan daftar (log) layanan apa saja yang terakhir diakses oleh user. | | |
