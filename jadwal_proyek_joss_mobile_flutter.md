@@ -78,26 +78,26 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 | **Mg** | **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** | **Jan** |
 | --- | --- | --- | --- | --- | --- | --- |
-| **1** | **[A]**<br>Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| **2** | **[A]**<br>Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| **3** | **[A]**<br>Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">██</span> | <span style="color:#2563EB;">██</span> |  |  |
-| **4** | **[A]**<br>Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* |  | <span style="color:#2563EB;">███</span> |  |  |
-| **5** | **[B]**<br>Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) <br> *(Modul Dashboard & Navigasi)* |  | <span style="color:#16A34A;">███</span> |  |  |
-| **6** | **[B]**<br>Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi <br> *(Modul Profil, Riwayat, Layanan)* |  | <span style="color:#16A34A;">███</span> |  |  |
-| **7** | **[B]**<br>Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
-| **8** | **[B]**<br>Des Pekan 1–2 | Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* |  |  | <span style="color:#16A34A;">███</span> |  |
-| **9** | **[C]**<br>Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |  |
-| **10** | **[C]**<br>Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | <span style="color:#EA580C;">███</span> |  |
-| **11** | **[C]**<br>Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | <span style="color:#EA580C;">██</span> | <span style="color:#EA580C;">██</span> |
-| **12** | **[C]**<br>Jan Pekan 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* |  |  |  | <span style="color:#EA580C;">███</span> |
+| **1** | <span style="color:#2563EB;">**[A]**</span><br>Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| **2** | <span style="color:#2563EB;">**[A]**</span><br>Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| **3** | <span style="color:#2563EB;">**[A]**</span><br>Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">██</span> | <span style="color:#2563EB;">██</span> |  |  |
+| **4** | <span style="color:#2563EB;">**[A]**</span><br>Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> **• Review Progress Akhir Fase A** |  | <span style="color:#2563EB;">███</span> |  |  |
+| **5** | <span style="color:#16A34A;">**[B]**</span><br>Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) <br> *(Modul Dashboard & Navigasi)* |  | <span style="color:#16A34A;">███</span> |  |  |
+| **6** | <span style="color:#16A34A;">**[B]**</span><br>Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi <br> *(Modul Profil, Riwayat, Layanan)* |  | <span style="color:#16A34A;">███</span> |  |  |
+| **7** | <span style="color:#16A34A;">**[B]**</span><br>Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
+| **8** | <span style="color:#16A34A;">**[B]**</span><br>Des Pekan 1–2 | Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* <br> **• Review Progress Akhir Fase B** |  |  | <span style="color:#16A34A;">███</span> |  |
+| **9** | <span style="color:#EA580C;">**[C]**</span><br>Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |  |
+| **10** | <span style="color:#EA580C;">**[C]**</span><br>Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | <span style="color:#EA580C;">███</span> |  |
+| **11** | <span style="color:#EA580C;">**[C]**</span><br>Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | <span style="color:#EA580C;">██</span> | <span style="color:#EA580C;">██</span> |
+| **12** | <span style="color:#EA580C;">**[C]**</span><br>Jan Pekan 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* <br> **• Final Review & Penutupan Proyek** |  |  |  | <span style="color:#EA580C;">███</span> |
 
 ### Visualisasi Progress per Bulan
 
 | **Bulan** | **W1** | **W2** | **W3** | **W4** | **Milestone Utama** |
 | --- | --- | --- | --- | --- | --- |
-| **Bulan 1** (Okt–Nov) | [A] Kick-off & KAK | [A] Desain UI/UX | [A] Integrasi SSO | [A] Manajemen Sesi | [v] Autentikasi SSO Mobile berjalan |
-| **Bulan 2** (Nov–Des) | [B] Dashboard | [B] Modul Layanan | [B] Notifikasi | [B] Offline Cache | [v] Seluruh fitur utama selesai |
-| **Bulan 3** (Des–Jan) | [C] Alpha Test | [C] UAT Klien | [C] ToT & Build Final | [C] Rilis & BAST | [v] Aplikasi live & proyek serah terima |
+| **Bulan 1** (Okt–Nov) | <span style="color:#2563EB; font-weight:bold;">[A]</span> Kick-off & KAK | <span style="color:#2563EB; font-weight:bold;">[A]</span> Desain UI/UX | <span style="color:#2563EB; font-weight:bold;">[A]</span> Integrasi SSO | <span style="color:#2563EB; font-weight:bold;">[A]</span> Manajemen Sesi | [v] Autentikasi SSO Mobile berjalan |
+| **Bulan 2** (Nov–Des) | <span style="color:#16A34A; font-weight:bold;">[B]</span> Dashboard | <span style="color:#16A34A; font-weight:bold;">[B]</span> Modul Layanan | <span style="color:#16A34A; font-weight:bold;">[B]</span> Notifikasi | <span style="color:#16A34A; font-weight:bold;">[B]</span> Offline Cache | [v] Seluruh fitur utama selesai |
+| **Bulan 3** (Des–Jan) | <span style="color:#EA580C; font-weight:bold;">[C]</span> Alpha Test | <span style="color:#EA580C; font-weight:bold;">[C]</span> UAT Klien | <span style="color:#EA580C; font-weight:bold;">[C]</span> ToT & Build Final | <span style="color:#EA580C; font-weight:bold;">[C]</span> Rilis & BAST | [v] Aplikasi live & proyek serah terima |
 
 ---
 
@@ -153,8 +153,8 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 November 2026                                                                                                                                                                                                |
-| **Aktivitas**  | - Implementasi **Flutter Secure Storage** untuk penyimpanan token & kredensial yang aman <br> - Implementasi fitur **Auto-Login** (persistent session) <br> - Implementasi fitur **Logout** (clear token, revoke session di server) <br> - Implementasi mekanisme **Refresh Token** otomatis <br> - Penanganan error & expired token (redirect ke halaman login) |
-| **Output**     | [v] Modul Manajemen Sesi & Keamanan Akses lengkap <br> [v] Fitur Auto-Login & Persistent Session <br> [v] Mekanisme Refresh Token otomatis <br> [v] Secure Storage untuk data sensitif                                              |
+| **Aktivitas**  | - Implementasi **Flutter Secure Storage** untuk penyimpanan token & kredensial yang aman <br> - Implementasi fitur **Auto-Login** (persistent session) <br> - Implementasi fitur **Logout** (clear token, revoke session di server) <br> - Implementasi mekanisme **Refresh Token** otomatis <br> - Penanganan error & expired token (redirect ke halaman login) <br> - **Review Progress Akhir Fase A bersama Klien** |
+| **Output**     | [v] Modul Manajemen Sesi & Keamanan Akses lengkap <br> [v] Fitur Auto-Login & Persistent Session <br> [v] Mekanisme Refresh Token otomatis <br> [v] Secure Storage untuk data sensitif <br> [v] Laporan Review Progress Fase A |
 | **PIC**        | Lead Developer, Security Reviewer                                                                                                                                                                                              |
 
 ---
@@ -203,8 +203,8 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 Desember 2026                                                                                                                                                                                                                                          |
-| **Aktivitas**  | - Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> - Optimasi performa aplikasi: memory, network call, dan battery usage <br> - Implementasi **connectivity checker** (online/offline mode) |
-| **Output**     | [v] Local Database & Offline Caching <br> [v] Connectivity-aware UX (indikator online/offline) <br> [v] Laporan optimasi performa aplikasi                                                                         |
+| **Aktivitas**  | - Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> - Optimasi performa aplikasi: memory, network call, dan battery usage <br> - Implementasi **connectivity checker** (online/offline mode) <br> - **Review Progress Akhir Fase B bersama Klien** |
+| **Output**     | [v] Local Database & Offline Caching <br> [v] Connectivity-aware UX (indikator online/offline) <br> [v] Laporan optimasi performa aplikasi <br> [v] Laporan Review Progress Fase B |
 | **PIC**        | Lead Developer, Flutter Developer                                                                                                                                                                                                                                        |
 
 ---
@@ -253,8 +253,8 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 Januari 2027                                                                                                                                                                                                                                                                                          |
-| **Aktivitas**  | - Proses **submission ke Google Play Store & Apple App Store** (atau distribusi internal MDM instansi) <br> - Monitoring pasca-rilis (crash reporting via Firebase Crashlytics) <br> - Penyusunan dokumen penutupan proyek <br> - Penandatanganan **Berita Acara Serah Terima (BAST)** <br> - Handover source code, dokumentasi, dan akses repository ke pihak Jombang |
-| **Output**     | [v] Aplikasi JOSS Mobile tayang di Play Store & App Store <br> [v] Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> [v] Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak <br> [v] Handover seluruh aset proyek                                                                  |
+| **Aktivitas**  | - Proses **submission ke Google Play Store & Apple App Store** (atau distribusi internal MDM instansi) <br> - Monitoring pasca-rilis (crash reporting via Firebase Crashlytics) <br> - Penyusunan dokumen penutupan proyek <br> - Penandatanganan **Berita Acara Serah Terima (BAST)** <br> - Handover source code, dokumentasi, dan akses repository ke pihak Jombang <br> - **Pelaksanaan Final Review Proyek** |
+| **Output**     | [v] Aplikasi JOSS Mobile tayang di Play Store & App Store <br> [v] Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> [v] Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak <br> [v] Handover seluruh aset proyek <br> [v] Laporan Final Review Proyek |
 | **PIC**        | Project Manager, Lead Developer, Perwakilan Klien                                                                                                                                                                                                                                                                       |
 
 ---
