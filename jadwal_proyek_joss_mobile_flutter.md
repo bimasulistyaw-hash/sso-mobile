@@ -282,7 +282,23 @@ Berikut adalah daftar lengkap modul yang akan dikembangkan dalam aplikasi JOSS M
 | 24 | `SYS-04` | **Deep Linking** | Handle link dari notifikasi/email (reset password, verifikasi) |
 | 25 | `SYS-05` | **Error Handling & Crash Reporting** | Global error handler, Firebase Crashlytics |
 
-> **Total: 25 Modul** — mencakup seluruh kebutuhan fungsional dan non-fungsional aplikasi JOSS Mobile.
+> **Total: 25 Modul Inti** — mencakup seluruh kebutuhan fungsional dan non-fungsional aplikasi JOSS Mobile.
+
+### Modul Tambahan (Perlu Dibahas dalam Kick-off)
+
+> Modul-modul berikut merupakan fitur tambahan yang dapat memperkaya aplikasi JOSS Mobile. **Status ketersediaan modul ini akan dibahas dan disepakati bersama klien saat kick-off meeting** untuk menentukan apakah masuk dalam scope Fase 2 atau ditunda ke fase berikutnya.
+
+| **No** | **Kode** | **Nama Modul** | **Fitur** | **Referensi** | **Status** |
+|---|---|---|---|---|---|
+| 26 | `NEWS-01` | **Berita & Informasi Jombang** | Feed berita dari portal resmi Jombang, slider headline, filter kategori berita | JSS Jogjakota | ⏳ Perlu Dibahas |
+| 27 | `NEWS-02` | **Detail Artikel Berita** | Halaman baca artikel lengkap, share ke sosial media, berita terkait | JSS Jogjakota | ⏳ Perlu Dibahas |
+| 28 | `QUICK-01` | **Quick Access / Layanan Favorit** | Baris icon shortcut ke layanan paling sering diakses user | JSS Jogjakota | ⏳ Perlu Dibahas |
+| 29 | `REPORT-01` | **Pengaduan Publik (E-Lapor)** | Buat laporan aduan, upload foto + lokasi GPS, tracking status (Lapor → Dikerjakan → Selesai) | JSS Jogjakota | ⏳ Perlu Dibahas |
+| 30 | `UMKM-01` | **Produk & UMKM Jombang** | Direktori produk lokal, harga, info penjual, katalog UMKM | JSS Jogjakota | ⏳ Perlu Dibahas |
+| 31 | `TOUR-01` | **Pariwisata & Event Jombang** | Katalog destinasi wisata daerah, agenda event kota | JSS Jogjakota | ⏳ Perlu Dibahas |
+| 32 | `MEDIA-01` | **Channel Video Jombang** | Embed video YouTube resmi Pemkab Jombang, galeri media | JSS Jogjakota | ⏳ Perlu Dibahas |
+
+> **Catatan:** Jika modul tambahan di atas disepakati untuk masuk scope Fase 2, maka timeline dan resource perlu disesuaikan kembali. Alternatifnya, modul-modul tersebut dapat dijadwalkan sebagai bagian dari **Fase 3 (Enhancement & Fitur Lanjutan)**.
 
 ---
 
