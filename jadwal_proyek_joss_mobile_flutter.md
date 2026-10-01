@@ -223,8 +223,8 @@ Berikut adalah daftar lengkap modul yang akan dikembangkan dalam aplikasi JOSS M
 |---|---|---|---|
 | 1 | `AUTH-01` | **Splash Screen & Onboarding** | Splash screen dengan logo JOSS, onboarding slider (first-time user) |
 | 2 | `AUTH-02` | **Login** | Login via username + password, integrasi Keycloak OIDC+PKCE |
-| 3 | `AUTH-03` | **Registrasi** | Form registrasi (Nama, Email, No. HP, NIK, Password), submit ke Keycloak |
-| 4 | `AUTH-04` | **Verifikasi Akun** | Verifikasi email setelah registrasi, halaman status verifikasi |
+| 3 | `AUTH-03` | **Registrasi** | Form registrasi (Nama, Email, No. HP, NIK, Password), upload foto KTP, submit ke Keycloak |
+| 4 | `AUTH-04` | **Verifikasi Akun & KYC** | Verifikasi email setelah registrasi, upload KTP & foto selfie, proses KYC, halaman status verifikasi |
 | 5 | `AUTH-05` | **Lupa Password / Reset Password** | Input email → Keycloak kirim link reset → form ganti password baru |
 | 6 | `AUTH-06` | **Manajemen Sesi & Token** | Auto-login, refresh token otomatis, logout (revoke session), secure storage |
 
