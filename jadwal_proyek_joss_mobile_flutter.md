@@ -68,36 +68,36 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ### Tabel Ringkasan per Fase
 
-| **Fase** | **Indikator** | **Minggu** | **Durasi** | **Fokus Utama** |
+| **Fase** | **Minggu (Durasi)** | **Fokus Utama** |
+| --- | --- | --- |
+| **FASE A:** Perencanaan & Integrasi API/SSO | 1–4 (4 Minggu) | Setup proyek, desain UI/UX, integrasi autentikasi SSO |
+| **FASE B:** Pengembangan Fitur Utama & Layanan | 5–8 (4 Minggu) | Dashboard, modul layanan, notifikasi, offline cache |
+| **FASE C:** Testing, ToT, & Deployment | 9–12 (4 Minggu) | Alpha/UAT testing, pelatihan, rilis & serah terima |
+
+### Tabel Rincian Aktivitas Mingguan
+
+| **Mg** | **Fase** | **Periode** | **Aktivitas & Modul** | **Output / Deliverable** |
 | --- | --- | --- | --- | --- |
-| Perencanaan & Integrasi API/SSO Mobile | <span style="background:#2563EB;color:#fff;padding:2px 10px;border-radius:4px;font-weight:bold;">FASE A</span> | 1 – 4 | 4 Minggu | Setup proyek, desain UI/UX, integrasi autentikasi SSO |
-| Pengembangan Fitur Utama & Layanan | <span style="background:#16A34A;color:#fff;padding:2px 10px;border-radius:4px;font-weight:bold;">FASE B</span> | 5 – 8 | 4 Minggu | Dashboard, modul layanan, notifikasi, biometrik |
-| Testing, ToT, & Deployment | <span style="background:#EA580C;color:#fff;padding:2px 10px;border-radius:4px;font-weight:bold;">FASE C</span> | 9 – 12 | 4 Minggu | Alpha/UAT testing, pelatihan, rilis & serah terima |
-
-### Tabel Detail Gantt Chart — 12 Minggu
-
-| **Minggu** | **Fase** | **Periode** | **Aktivitas Utama** | **Modul / Komponen Terkait** | **Output / Deliverable** | **Okt** | **Nov** | **Des** | **Jan** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **1** | <span style="background:#2563EB;color:#fff;padding:2px 8px;border-radius:4px;">A</span> Perencanaan | Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur | Arsitektur Dasar & Boilerplate | KAK Final, Boilerplate Repo, Wireframe | <span style="background:#2563EB;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | | | |
-| **2** | <span style="background:#2563EB;color:#fff;padding:2px 8px;border-radius:4px;">A</span> Perencanaan | Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System | Design System & UI/UX | Desain UI/UX Final, Prototype Interaktif | <span style="background:#2563EB;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | | | |
-| **3** | <span style="background:#2563EB;color:#fff;padding:2px 8px;border-radius:4px;">A</span> Integrasi SSO | Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling | Modul SSO (Keycloak, AppAuth) | Modul Login & SSO (Alpha), Network Layer | <span style="background:#2563EB;color:#fff;padding:2px 8px;border-radius:4px 0 0 4px;">■■</span> | <span style="background:#2563EB;color:#fff;padding:2px 8px;border-radius:0 4px 4px 0;">■■</span> | | |
-| **4** | <span style="background:#2563EB;color:#fff;padding:2px 8px;border-radius:4px;">A</span> Integrasi SSO | Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token | Modul Keamanan Sesi & Token | Modul Sesi & Keamanan, Auto-Login | | <span style="background:#2563EB;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | | |
-| **5** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) | Modul Dashboard & Navigasi | Dashboard & Navigasi, Komponen UI | | <span style="background:#16A34A;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | | |
-| **6** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi | Modul Profil, Riwayat, Layanan | Modul Profil, Riwayat Akses, Layanan v1 | | <span style="background:#16A34A;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | | |
-| **7** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi | Modul Notifikasi (FCM) & Akun | Modul Notifikasi & Pengaturan Akun | | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px 0 0 4px;">■■</span> | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:0 4px 4px 0;">■■</span> | |
-| **8** | <span style="background:#16A34A;color:#fff;padding:2px 8px;border-radius:4px;">B</span> Core Features | Des Pekan 1–2 | Offline caching (Local DB), optimasi performa | Modul Cache Offline & Core | Local DB, Optimasi Performa | | | <span style="background:#16A34A;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | |
-| **9** | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px;">C</span> Testing | Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing | Alpha Release Build | Test Case (50+ skenario), APK Alpha, Laporan Bug | | | <span style="background:#EA580C;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | |
-| **10** | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px;">C</span> Testing | Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback | Beta Release Build (UAT) | BA UAT, Evaluasi Perbaikan, APK Beta | | | <span style="background:#EA580C;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> | |
-| **11** | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px;">C</span> Deployment | Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate | Release Candidate Build | Laporan ToT, Panduan Penggunaan, APK RC | | | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px 0 0 4px;">■■</span> | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:0 4px 4px 0;">■■</span> |
-| **12** | <span style="background:#EA580C;color:#fff;padding:2px 8px;border-radius:4px;">C</span> Deployment | Jan Pekan 1–2 | Submission Play Store, serah terima, BAST | Production Release | Aplikasi Live, Dokumentasi Akhir, BAST | | | | <span style="background:#EA580C;color:#fff;padding:2px 12px;border-radius:4px;">■■■</span> |
+| **1** | **[A]** Perencanaan/SSO | Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | KAK Final, Boilerplate Repo, Wireframe |
+| **2** | **[A]** Perencanaan/SSO | Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | Desain UI/UX Final, Prototype Interaktif |
+| **3** | **[A]** Perencanaan/SSO | Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling <br> *(Modul SSO (Keycloak, AppAuth))* | Modul Login & SSO (Alpha), Network Layer |
+| **4** | **[A]** Perencanaan/SSO | Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* | Modul Sesi & Keamanan, Auto-Login |
+| **5** | **[B]** Core Features | Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) <br> *(Modul Dashboard & Navigasi)* | Dashboard & Navigasi, Komponen UI |
+| **6** | **[B]** Core Features | Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi <br> *(Modul Profil, Riwayat, Layanan)* | Modul Profil, Riwayat Akses, Layanan v1 |
+| **7** | **[B]** Core Features | Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* | Modul Notifikasi & Pengaturan Akun |
+| **8** | **[B]** Core Features | Des Pekan 1–2 | Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* | Local DB, Optimasi Performa |
+| **9** | **[C]** Testing/Deploy | Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* | Test Case (50+ skenario), APK Alpha, Laporan Bug |
+| **10** | **[C]** Testing/Deploy | Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* | BA UAT, Evaluasi Perbaikan, APK Beta |
+| **11** | **[C]** Testing/Deploy | Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* | Laporan ToT, Panduan Penggunaan, APK RC |
+| **12** | **[C]** Testing/Deploy | Jan Pekan 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* | Aplikasi Live, Dokumentasi Akhir, BAST |
 
 ### Visualisasi Progress per Bulan
 
 | **Bulan** | **W1** | **W2** | **W3** | **W4** | **Milestone Utama** |
 | --- | --- | --- | --- | --- | --- |
-| **Bulan 1** (Okt–Nov) | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Kick-off & KAK | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Desain UI/UX | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Integrasi SSO | <span style="background:#2563EB;color:#fff;padding:2px 6px;border-radius:4px;">A</span> Manajemen Sesi | [v] Autentikasi SSO Mobile berjalan |
-| **Bulan 2** (Nov–Des) | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Dashboard | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Modul Layanan | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Notifikasi | <span style="background:#16A34A;color:#fff;padding:2px 6px;border-radius:4px;">B</span> Offline Cache | [v] Seluruh fitur utama selesai |
-| **Bulan 3** (Des–Jan) | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> Alpha Test | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> UAT Klien | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> ToT & Build Final | <span style="background:#EA580C;color:#fff;padding:2px 6px;border-radius:4px;">C</span> Rilis & BAST | [v] Aplikasi live & proyek serah terima |
+| **Bulan 1** (Okt–Nov) | [A] Kick-off & KAK | [A] Desain UI/UX | [A] Integrasi SSO | [A] Manajemen Sesi | [v] Autentikasi SSO Mobile berjalan |
+| **Bulan 2** (Nov–Des) | [B] Dashboard | [B] Modul Layanan | [B] Notifikasi | [B] Offline Cache | [v] Seluruh fitur utama selesai |
+| **Bulan 3** (Des–Jan) | [C] Alpha Test | [C] UAT Klien | [C] ToT & Build Final | [C] Rilis & BAST | [v] Aplikasi live & proyek serah terima |
 
 ---
 
