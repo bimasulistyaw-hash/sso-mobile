@@ -14,7 +14,7 @@
 | **Durasi**                  | 3 Bulan (12 Minggu Efektif)                                               |
 | **Estimasi Mulai**          | Pekan ke-2 s.d. ke-3 Oktober 2026 *(estimasi mundur 1–2 minggu dari 1 Oktober)* |
 | **Estimasi Selesai**        | Pekan ke-2 s.d. ke-3 Januari 2027                                         |
-| **Portal Web (Fase 1)**     | [v] Live — https://joss.jombangkab.go.id                                  |
+| **Portal Web (Fase 1)**     | ✅ Live — https://joss.jombangkab.go.id                                  |
 | **SSO Server**              | Keycloak — https://sso-v2.jombangkab.go.id (Realm: `jombangkab`)          |
 | **Protokol Autentikasi**    | OAuth2 / OpenID Connect (Authorization Code Flow)                          |
 
@@ -95,9 +95,9 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 | **Bulan** | **W1** | **W2** | **W3** | **W4** | **Milestone Utama** |
 | --- | --- | --- | --- | --- | --- |
-| **Bulan 1** (Okt–Nov) | <span style="color:#2563EB; font-weight:bold;">[A]</span> Kick-off & KAK | <span style="color:#2563EB; font-weight:bold;">[A]</span> Desain UI/UX | <span style="color:#2563EB; font-weight:bold;">[A]</span> Integrasi SSO | <span style="color:#2563EB; font-weight:bold;">[A]</span> Manajemen Sesi | [v] Autentikasi SSO Mobile berjalan |
-| **Bulan 2** (Nov–Des) | <span style="color:#16A34A; font-weight:bold;">[B]</span> Dashboard | <span style="color:#16A34A; font-weight:bold;">[B]</span> Modul Layanan | <span style="color:#16A34A; font-weight:bold;">[B]</span> Notifikasi | <span style="color:#16A34A; font-weight:bold;">[B]</span> Offline Cache | [v] Seluruh fitur utama selesai |
-| **Bulan 3** (Des–Jan) | <span style="color:#EA580C; font-weight:bold;">[C]</span> Alpha Test | <span style="color:#EA580C; font-weight:bold;">[C]</span> UAT Klien | <span style="color:#EA580C; font-weight:bold;">[C]</span> ToT & Build Final | <span style="color:#EA580C; font-weight:bold;">[C]</span> Rilis & BAST | [v] Aplikasi live & proyek serah terima |
+| **Bulan 1** (Okt–Nov) | <span style="color:#2563EB; font-weight:bold;">[A]</span> Kick-off & KAK | <span style="color:#2563EB; font-weight:bold;">[A]</span> Desain UI/UX | <span style="color:#2563EB; font-weight:bold;">[A]</span> Integrasi SSO | <span style="color:#2563EB; font-weight:bold;">[A]</span> Manajemen Sesi | ✅ Autentikasi SSO Mobile berjalan |
+| **Bulan 2** (Nov–Des) | <span style="color:#16A34A; font-weight:bold;">[B]</span> Dashboard | <span style="color:#16A34A; font-weight:bold;">[B]</span> Modul Layanan | <span style="color:#16A34A; font-weight:bold;">[B]</span> Notifikasi | <span style="color:#16A34A; font-weight:bold;">[B]</span> Offline Cache | ✅ Seluruh fitur utama selesai |
+| **Bulan 3** (Des–Jan) | <span style="color:#EA580C; font-weight:bold;">[C]</span> Alpha Test | <span style="color:#EA580C; font-weight:bold;">[C]</span> UAT Klien | <span style="color:#EA580C; font-weight:bold;">[C]</span> ToT & Build Final | <span style="color:#EA580C; font-weight:bold;">[C]</span> Rilis & BAST | ✅ Aplikasi live & proyek serah terima |
 
 ---
 
@@ -121,7 +121,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-2/ke-3 Oktober 2026                                                                                                                                               |
 | **Aktivitas**  | - Koordinasi internal tim & kick-off meeting bersama klien Jombang <br> - Finalisasi KAK (Kerangka Acuan Kerja) <br> - Setup arsitektur proyek Flutter (Android & iOS, repository, CI/CD pipeline, code convention) <br> - Review dan mapping endpoint API dari portal web JOSS <br> - Registrasi client `joss-mobile` di Keycloak (realm `jombangkab`) <br> - Identifikasi API yang sudah ada vs API yang perlu dibangun baru <br> - Penyusunan wireframe awal |
-| **Output**     | [v] Dokumen KAK Final yang disetujui kedua belah pihak <br> [v] Project Repository & Boilerplate Flutter (Dart) <br> [v] Client `joss-mobile` terdaftar di Keycloak <br> [v] Dokumen Gap Analysis API (existing vs required) <br> [v] Wireframe UI/UX (Low-Fidelity) |
+| **Output**     | ✅ Dokumen KAK Final yang disetujui kedua belah pihak <br> ✅ Project Repository & Boilerplate Flutter (Dart) <br> ✅ Client `joss-mobile` terdaftar di Keycloak <br> ✅ Dokumen Gap Analysis API (existing vs required) <br> ✅ Wireframe UI/UX (Low-Fidelity) |
 | **PIC**        | Project Manager, Lead Developer, UI/UX Designer                                                                                                                             |
 
 ---
@@ -132,7 +132,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-3/ke-4 Oktober 2026                                                                                                                                                                         |
 | **Aktivitas**  | - Finalisasi desain UI/UX di Figma (High-Fidelity) untuk seluruh halaman utama <br> - Desain halaman: Splash Screen, Onboarding, Login/Register, Lupa Password, Dashboard, Profil Pengguna <br> - Penyusunan Design System (warna, tipografi, komponen reusable) <br> - Review & approval desain oleh klien |
-| **Output**     | [v] Dokumen Desain UI/UX Final (Figma Link) — disetujui klien <br> [v] Design System / Style Guide Aplikasi <br> [v] Prototype Interaktif (Clickable Prototype)                                          |
+| **Output**     | ✅ Dokumen Desain UI/UX Final (Figma Link) — disetujui klien <br> ✅ Design System / Style Guide Aplikasi <br> ✅ Prototype Interaktif (Clickable Prototype)                                          |
 | **PIC**        | UI/UX Designer, Project Manager                                                                                                                                                                       |
 
 ---
@@ -143,7 +143,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-4 Oktober / Pekan ke-1 November 2026                                                                                                                                                                                            |
 | **Aktivitas**  | - Implementasi autentikasi via **Keycloak OIDC + PKCE** menggunakan library **flutter_appauth** <br> - Flow: Login → In-App Browser → Keycloak → Redirect URI → Access Token <br> - Integrasi endpoint Keycloak realm `jombangkab` (token, userinfo, logout) <br> - Implementasi **JWT Token Handling**: penyimpanan, parsing, dan validasi token <br> - Setup **Dio/HTTP** + Interceptor untuk auto-attach Bearer token <br> - Pengembangan **API backend tambahan** yang belum tersedia untuk mobile |
-| **Output**     | [v] Modul Login via Keycloak OIDC+PKCE berjalan <br> [v] Register & Lupa Password via Keycloak flow <br> [v] Network Layer (Dio / HTTP Interceptor) terkonfigurasi <br> [v] API backend tambahan untuk mobile (v1) <br> [v] Unit Test untuk modul autentikasi                                 |
+| **Output**     | ✅ Modul Login via Keycloak OIDC+PKCE berjalan <br> ✅ Register & Lupa Password via Keycloak flow <br> ✅ Network Layer (Dio / HTTP Interceptor) terkonfigurasi <br> ✅ API backend tambahan untuk mobile (v1) <br> ✅ Unit Test untuk modul autentikasi                                 |
 | **PIC**        | Lead Developer, Backend Developer (support)                                                                                                                                                                                                |
 
 ---
@@ -154,7 +154,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 November 2026                                                                                                                                                                                                |
 | **Aktivitas**  | - Implementasi **Flutter Secure Storage** untuk penyimpanan token & kredensial yang aman <br> - Implementasi fitur **Auto-Login** (persistent session) <br> - Implementasi fitur **Logout** (clear token, revoke session di server) <br> - Implementasi mekanisme **Refresh Token** otomatis <br> - Penanganan error & expired token (redirect ke halaman login) <br> - **Review Progress Akhir Fase A bersama Klien** |
-| **Output**     | [v] Modul Manajemen Sesi & Keamanan Akses lengkap <br> [v] Fitur Auto-Login & Persistent Session <br> [v] Mekanisme Refresh Token otomatis <br> [v] Secure Storage untuk data sensitif <br> [v] Laporan Review Progress Fase A |
+| **Output**     | ✅ Modul Manajemen Sesi & Keamanan Akses lengkap <br> ✅ Fitur Auto-Login & Persistent Session <br> ✅ Mekanisme Refresh Token otomatis <br> ✅ Secure Storage untuk data sensitif <br> ✅ Laporan Review Progress Fase A |
 | **PIC**        | Lead Developer, Security Reviewer                                                                                                                                                                                              |
 
 ---
@@ -171,7 +171,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-2/ke-3 November 2026                                                                                                                                                                                 |
 | **Aktivitas**  | - Pengembangan halaman **Dashboard Utama** setelah login berhasil <br> - Implementasi **Bottom Navigation / Drawer Navigation** <br> - Integrasi data ringkasan (summary cards, statistik, atau quick-access menu) <br> - Implementasi **pull-to-refresh** dan loading state |
-| **Output**     | [v] Halaman Dashboard Utama aplikasi <br> [v] Sistem Navigasi Aplikasi (Bottom Nav / Drawer) <br> [v] Komponen UI reusable (cards, lists, loading indicators)                                                       |
+| **Output**     | ✅ Halaman Dashboard Utama aplikasi <br> ✅ Sistem Navigasi Aplikasi (Bottom Nav / Drawer) <br> ✅ Komponen UI reusable (cards, lists, loading indicators)                                                       |
 | **PIC**        | Flutter Developer, UI/UX Designer                                                                                                                                                                               |
 
 ---
@@ -182,7 +182,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-3/ke-4 November 2026                                                                                                                                                                                                                                      |
 | **Aktivitas**  | - Pengembangan modul layanan utama sesuai kebutuhan Jombang, meliputi: <br> &nbsp;&nbsp;• **Profil Warga/Pengguna** (view & edit profil, upload foto) <br> &nbsp;&nbsp;• **Riwayat Akses/Aktivitas** pengguna <br> &nbsp;&nbsp;• **Integrasi Layanan Instansi** terkait (jika ada endpoint layanan publik) <br> - Integrasi API layanan dengan error handling yang proper |
-| **Output**     | [v] Modul Profil Pengguna (View, Edit, Upload Foto) <br> [v] Modul Riwayat Akses / Log Aktivitas <br> [v] Modul Layanan Instansi (Versi 1) <br> [v] Integrasi API Layanan berjalan                                                                                       |
+| **Output**     | ✅ Modul Profil Pengguna (View, Edit, Upload Foto) <br> ✅ Modul Riwayat Akses / Log Aktivitas <br> ✅ Modul Layanan Instansi (Versi 1) <br> ✅ Integrasi API Layanan berjalan                                                                                       |
 | **PIC**        | Flutter Developer, Backend Developer (support API)                                                                                                                                                                                                                   |
 
 ---
@@ -193,7 +193,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-4 November / Pekan ke-1 Desember 2026                                                                                                                                                                                                           |
 | **Aktivitas**  | - Integrasi **Firebase Cloud Messaging (FCM)** untuk push notification <br> - Implementasi notifikasi: pengumuman, update layanan, dan reminder <br> - Pengembangan halaman **Pengaturan Akun** (ubah password, pengaturan notifikasi, bahasa, tema) <br> - Implementasi **in-app notification center** (daftar notifikasi yang diterima) |
-| **Output**     | [v] Modul Push Notification (FCM) terintegrasi dan berfungsi <br> [v] In-App Notification Center <br> [v] Halaman Pengaturan Akun Pengguna <br> [v] Pengaturan preferensi notifikasi                                                                            |
+| **Output**     | ✅ Modul Push Notification (FCM) terintegrasi dan berfungsi <br> ✅ In-App Notification Center <br> ✅ Halaman Pengaturan Akun Pengguna <br> ✅ Pengaturan preferensi notifikasi                                                                            |
 | **PIC**        | Flutter Developer, Backend Developer (FCM setup)                                                                                                                                                                                                          |
 
 ---
@@ -204,7 +204,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 Desember 2026                                                                                                                                                                                                                                          |
 | **Aktivitas**  | - Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> - Optimasi performa aplikasi: memory, network call, dan battery usage <br> - Implementasi **connectivity checker** (online/offline mode) <br> - **Review Progress Akhir Fase B bersama Klien** |
-| **Output**     | [v] Local Database & Offline Caching <br> [v] Connectivity-aware UX (indikator online/offline) <br> [v] Laporan optimasi performa aplikasi <br> [v] Laporan Review Progress Fase B |
+| **Output**     | ✅ Local Database & Offline Caching <br> ✅ Connectivity-aware UX (indikator online/offline) <br> ✅ Laporan optimasi performa aplikasi <br> ✅ Laporan Review Progress Fase B |
 | **PIC**        | Lead Developer, Flutter Developer                                                                                                                                                                                                                                        |
 
 ---
@@ -221,7 +221,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-2/ke-3 Desember 2026                                                                                                                                                                                                                                |
 | **Aktivitas**  | - Pelaksanaan **Internal/Alpha Testing** oleh tim pengembang <br> - Penyusunan **Test Case Document** & skenario UAT <br> - Identifikasi dan perbaikan bug (critical & major) <br> - Testing kompatibilitas di berbagai perangkat Android & iOS <br> - Security testing dasar (token exposure, data leakage) |
-| **Output**     | [v] Dokumen Test Case (minimal 50 skenario) <br> [v] Laporan Bug Fixing (Critical & Major resolved) <br> [v] APK/IPA Internal Build (Alpha) untuk distribusi testing <br> [v] Laporan Compatibility Testing                                                              |
+| **Output**     | ✅ Dokumen Test Case (minimal 50 skenario) <br> ✅ Laporan Bug Fixing (Critical & Major resolved) <br> ✅ APK/IPA Internal Build (Alpha) untuk distribusi testing <br> ✅ Laporan Compatibility Testing                                                              |
 | **PIC**        | QA Tester, Lead Developer, Seluruh Tim Dev                                                                                                                                                                                                                     |
 
 ---
@@ -232,7 +232,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-3/ke-4 Desember 2026                                                                                                                                                                                                                                                   |
 | **Aktivitas**  | - Pelaksanaan **User Acceptance Testing (UAT)** bersama tim/klien Jombang <br> - Pengumpulan feedback dan catatan evaluasi dari pengguna <br> - Penyempurnaan UI/UX berdasarkan hasil UAT <br> - Perbaikan bug minor yang ditemukan saat UAT <br> - Persiapan **materi ToT** (Training of Trainer): modul panduan, video tutorial singkat |
-| **Output**     | [v] Berita Acara (BA) Pelaksanaan UAT — ditandatangani kedua pihak <br> [v] Dokumen Catatan Evaluasi & Perbaikan UAT <br> [v] APK/IPA Build (Beta — Post-UAT) <br> [v] Draft Modul Panduan Penggunaan Aplikasi                                                                             |
+| **Output**     | ✅ Berita Acara (BA) Pelaksanaan UAT — ditandatangani kedua pihak <br> ✅ Dokumen Catatan Evaluasi & Perbaikan UAT <br> ✅ APK/IPA Build (Beta — Post-UAT) <br> ✅ Draft Modul Panduan Penggunaan Aplikasi                                                                             |
 | **PIC**        | Project Manager, QA Tester, Tim Dev, Perwakilan Klien                                                                                                                                                                                                                            |
 
 ---
@@ -243,7 +243,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Periode**    | Pekan ke-4 Desember 2026 / Pekan ke-1 Januari 2027                                                                                                                                                                                                                            |
 | **Aktivitas**  | - Pelaksanaan kegiatan **ToT (Training of Trainer)** untuk pengelola/admin di Jombang <br> - Materi ToT mencakup: cara instalasi, penggunaan fitur, troubleshooting dasar, dan pengelolaan akun <br> - Finalisasi build aplikasi untuk rilis (Release Candidate) <br> - Penyusunan **Dokumentasi Teknis** (arsitektur, API docs, deployment guide) |
-| **Output**     | [v] Laporan Pelaksanaan ToT (daftar hadir, dokumentasi foto, materi) <br> [v] Modul Panduan Penggunaan Aplikasi (Final) <br> [v] Master App Bundle (AAB) & Master IPA (Release Candidate) <br> [v] Dokumentasi Teknis Aplikasi                                                                     |
+| **Output**     | ✅ Laporan Pelaksanaan ToT (daftar hadir, dokumentasi foto, materi) <br> ✅ Modul Panduan Penggunaan Aplikasi (Final) <br> ✅ Master App Bundle (AAB) & Master IPA (Release Candidate) <br> ✅ Dokumentasi Teknis Aplikasi                                                                     |
 | **PIC**        | Project Manager, Lead Developer, Trainer                                                                                                                                                                                                                                        |
 
 ---
@@ -254,7 +254,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Pekan ke-1/ke-2 Januari 2027                                                                                                                                                                                                                                                                                          |
 | **Aktivitas**  | - Proses **submission ke Google Play Store & Apple App Store** (atau distribusi internal MDM instansi) <br> - Monitoring pasca-rilis (crash reporting via Firebase Crashlytics) <br> - Penyusunan dokumen penutupan proyek <br> - Penandatanganan **Berita Acara Serah Terima (BAST)** <br> - Handover source code, dokumentasi, dan akses repository ke pihak Jombang <br> - **Pelaksanaan Final Review Proyek** |
-| **Output**     | [v] Aplikasi JOSS Mobile tayang di Play Store & App Store <br> [v] Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> [v] Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak <br> [v] Handover seluruh aset proyek <br> [v] Laporan Final Review Proyek |
+| **Output**     | ✅ Aplikasi JOSS Mobile tayang di Play Store & App Store <br> ✅ Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> ✅ Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak <br> ✅ Handover seluruh aset proyek <br> ✅ Laporan Final Review Proyek |
 | **PIC**        | Project Manager, Lead Developer, Perwakilan Klien                                                                                                                                                                                                                                                                       |
 
 ---
