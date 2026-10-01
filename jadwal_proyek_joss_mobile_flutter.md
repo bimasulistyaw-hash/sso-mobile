@@ -78,18 +78,18 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 | **Mg** | **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** | **Jan** |
 | --- | --- | --- | --- | --- | --- | --- |
-| **1** | **[A]**<br>Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | ███ |  |  |  |
-| **2** | **[A]**<br>Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | ███ |  |  |  |
-| **3** | **[A]**<br>Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling <br> *(Modul SSO (Keycloak, AppAuth))* | ██ | ██ |  |  |
-| **4** | **[A]**<br>Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* |  | ███ |  |  |
-| **5** | **[B]**<br>Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) <br> *(Modul Dashboard & Navigasi)* |  | ███ |  |  |
-| **6** | **[B]**<br>Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi <br> *(Modul Profil, Riwayat, Layanan)* |  | ███ |  |  |
-| **7** | **[B]**<br>Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* |  | ██ | ██ |  |
-| **8** | **[B]**<br>Des Pekan 1–2 | Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* |  |  | ███ |  |
-| **9** | **[C]**<br>Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | ███ |  |
-| **10** | **[C]**<br>Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | ███ |  |
-| **11** | **[C]**<br>Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | ██ | ██ |
-| **12** | **[C]**<br>Jan Pekan 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* |  |  |  | ███ |
+| **1** | **[A]**<br>Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| **2** | **[A]**<br>Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| **3** | **[A]**<br>Okt–Nov Pekan 4–1 | Integrasi API SSO, modul login/register, JWT Handling <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">██</span> | <span style="color:#2563EB;">██</span> |  |  |
+| **4** | **[A]**<br>Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* |  | <span style="color:#2563EB;">███</span> |  |  |
+| **5** | **[B]**<br>Nov Pekan 2–3 | Dashboard utama, navigasi (Bottom Nav/Drawer) <br> *(Modul Dashboard & Navigasi)* |  | <span style="color:#16A34A;">███</span> |  |  |
+| **6** | **[B]**<br>Nov Pekan 3–4 | Modul layanan utama: profil warga, riwayat akses, layanan instansi <br> *(Modul Profil, Riwayat, Layanan)* |  | <span style="color:#16A34A;">███</span> |  |  |
+| **7** | **[B]**<br>Nov–Des Pekan 4–1 | Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
+| **8** | **[B]**<br>Des Pekan 1–2 | Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* |  |  | <span style="color:#16A34A;">███</span> |  |
+| **9** | **[C]**<br>Des Pekan 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |  |
+| **10** | **[C]**<br>Des Pekan 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | <span style="color:#EA580C;">███</span> |  |
+| **11** | **[C]**<br>Des–Jan Pekan 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | <span style="color:#EA580C;">██</span> | <span style="color:#EA580C;">██</span> |
+| **12** | **[C]**<br>Jan Pekan 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* |  |  |  | <span style="color:#EA580C;">███</span> |
 
 ### Visualisasi Progress per Bulan
 
