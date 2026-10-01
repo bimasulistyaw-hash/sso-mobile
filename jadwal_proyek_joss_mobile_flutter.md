@@ -20,49 +20,7 @@
 
 ---
 
-## II. Skenario & Asumsi Utama
-
-
-### Arsitektur SSO Keycloak (Existing)
-
-| **Komponen** | **Detail** |
-| --- | --- |
-| Keycloak Server | `https://sso-v2.jombangkab.go.id` |
-| Realm | `jombangkab` |
-| Client ID (Web) | `joss` |
-| Client ID (Mobile) | `joss-mobile` *(perlu didaftarkan baru di Keycloak)* |
-| Auth Flow | OAuth2 / OpenID Connect — Authorization Code + PKCE |
-| Login Action URL | `/realms/jombangkab/login-actions/authenticate` |
-| Token Endpoint | `/realms/jombangkab/protocol/openid-connect/token` |
-| UserInfo Endpoint | `/realms/jombangkab/protocol/openid-connect/userinfo` |
-| Logout Endpoint | `/realms/jombangkab/protocol/openid-connect/logout` |
-| Tema Login | `joss-sso-theme` (custom theme) |
-
-### Referensi Fitur Portal Web (Yang Harus Di-mirror ke Mobile)
-
-Berdasarkan analisis portal https://joss.jombangkab.go.id:
-
-| **No** | **Fitur Web** | **Adaptasi Mobile** |
-| --- | --- | --- |
-| 1 | Katalog layanan dengan kategori (Kepegawaian, Ketenagakerjaan, Layanan Publik) | Grid/List layanan dengan filter kategori |
-| 2 | Pencarian layanan (`/api/layanan?search=...`) | Search bar dengan real-time search |
-| 3 | Login via Keycloak SSO | Login via Keycloak OIDC + PKCE (Chrome Custom Tab / AppAuth) |
-| 4 | Register akun baru | Register via Keycloak registration flow |
-| 5 | Verifikasi KYC (Akun Belum Terverifikasi) | Status KYC di profil + notifikasi |
-| 6 | Akses aplikasi/layanan instansi | Deep link / WebView ke layanan terkait |
-| 7 | Placeholder "Unduh Aplikasi JOSS" di footer | Link langsung ke Google Play Store & Apple App Store |
-
-### Fokus Utama Fase 2
-
-- Membangun **portal mobile multi-platform (Android & iOS)** menggunakan framework **Flutter** sebagai mirror dari portal web JOSS yang sudah live.
-- Integrasi autentikasi SSO via **Keycloak OIDC + PKCE** (menggunakan library AppAuth untuk Flutter).
-- **Pengembangan API tambahan** di backend untuk mendukung fitur mobile yang belum tersedia.
-- Penambahan fitur spesifik mobile: **Push Notification, Offline Caching**.
-- Penyesuaian UI/UX agar responsif dan *user-friendly* di berbagai ukuran layar smartphone (Android/iOS).
-
----
-
-## III. Rincian Jadwal & Output per Minggu
+## II. Rincian Jadwal & Output per Minggu
 
 ### Ringkasan Timeline (Gantt Chart Overview)
 
@@ -115,7 +73,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.I — Minggu 1: Kick-off & Setup Proyek
+#### II.I — Minggu 1: Kick-off & Setup Proyek
 
 | **Item**       | **Detail**                                                                                                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -126,7 +84,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.II — Minggu 2: Desain UI/UX & Prototyping
+#### II.II — Minggu 2: Desain UI/UX & Prototyping
 
 | **Item**       | **Detail**                                                                                                                                                                                            |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -137,7 +95,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.III — Minggu 3: Integrasi Autentikasi SSO & API Core
+#### II.III — Minggu 3: Integrasi Autentikasi SSO & API Core
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -148,7 +106,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.IV — Minggu 4: Manajemen Sesi & Keamanan Akses
+#### II.IV — Minggu 4: Manajemen Sesi & Keamanan Akses
 
 | **Item**       | **Detail**                                                                                                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -165,7 +123,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.V — Minggu 5: Dashboard & Navigasi Utama
+#### II.V — Minggu 5: Dashboard & Navigasi Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                     |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -176,7 +134,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.VI — Minggu 6: Modul Fitur Layanan Utama
+#### II.VI — Minggu 6: Modul Fitur Layanan Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -187,7 +145,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.VII — Minggu 7: Push Notification & Pengaturan Akun
+#### II.VII — Minggu 7: Push Notification & Pengaturan Akun
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                               |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -198,7 +156,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.VIII — Minggu 8: Offline Caching & Optimasi
+#### II.VIII — Minggu 8: Offline Caching & Optimasi
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -215,7 +173,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.IX — Minggu 9: Alpha Testing & Bug Fixing
+#### II.IX — Minggu 9: Alpha Testing & Bug Fixing
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -226,7 +184,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.X — Minggu 10: UAT & Penyempurnaan Aplikasi
+#### II.X — Minggu 10: UAT & Penyempurnaan Aplikasi
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                       |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -237,7 +195,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.XI — Minggu 11: Training of Trainer (ToT) & Finalisasi Build
+#### II.XI — Minggu 11: Training of Trainer (ToT) & Finalisasi Build
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -248,7 +206,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-#### III.XII — Minggu 12: Deployment, Serah Terima, & Penutupan Proyek
+#### II.XII — Minggu 12: Deployment, Serah Terima, & Penutupan Proyek
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -259,7 +217,7 @@ Berdasarkan analisis portal https://joss.jombangkab.go.id:
 
 ---
 
-## IV. Ruang Lingkup Teknis — Apa yang Harus Dikerjakan Tim
+## III. Ruang Lingkup Teknis — Apa yang Harus Dikerjakan Tim
 
 Mengingat **portal web JOSS dan SSO Keycloak dari Fase 1 sudah live**, berikut adalah fokus teknis untuk Fase 2:
 
@@ -313,7 +271,7 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 
 ---
 
-## V. Daftar Deliverables / Output Utama Proyek
+## IV. Daftar Deliverables / Output Utama Proyek
 
 | **No** | **Deliverable**                                  | **Target Minggu** |
 | ------ | ------------------------------------------------ | ------------------ |
@@ -332,7 +290,7 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 
 ---
 
-## VI. Catatan & Risiko
+## V. Catatan & Risiko
 
 | **Risiko**                                     | **Mitigasi**                                                                  |
 | ---------------------------------------------- | ----------------------------------------------------------------------------- |
