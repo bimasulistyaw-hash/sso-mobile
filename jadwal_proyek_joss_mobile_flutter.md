@@ -20,7 +20,80 @@
 
 ---
 
-## II. Rincian Jadwal & Output per Minggu
+## II. Daftar Modul Aplikasi JOSS Mobile
+
+Berikut adalah daftar lengkap modul yang akan dikembangkan dalam aplikasi JOSS Mobile (Fase 2):
+
+### 🔐 Autentikasi & Keamanan
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 1 | `AUTH-01` | **Splash Screen & Onboarding** | Splash screen dengan logo JOSS, onboarding slider (first-time user) |
+| 2 | `AUTH-02` | **Login** | Login via username + password, integrasi Keycloak OIDC+PKCE |
+| 3 | `AUTH-03` | **Registrasi** | Form registrasi (Nama, Email, No. HP, NIK, Password), submit ke Keycloak |
+| 4 | `AUTH-04` | **Verifikasi Akun** | Verifikasi email setelah registrasi, halaman status verifikasi |
+| 5 | `AUTH-05` | **Lupa Password / Reset Password** | Input email → Keycloak kirim link reset → form ganti password baru |
+| 6 | `AUTH-06` | **Manajemen Sesi & Token** | Auto-login, refresh token otomatis, logout (revoke session), secure storage |
+
+### 🏠 Halaman Utama
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 7 | `HOME-01` | **Dashboard** | Halaman utama setelah login, summary cards, quick-access menu |
+| 8 | `HOME-02` | **Navigasi Utama** | Bottom Navigation Bar / Drawer, routing antar halaman |
+
+### 📋 Layanan
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 9 | `SVC-01` | **Katalog Layanan** | Daftar layanan publik, filter kategori (Kepegawaian, Ketenagakerjaan, dll) |
+| 10 | `SVC-02` | **Detail Layanan** | Halaman detail per layanan, deskripsi, syarat, dan akses |
+| 11 | `SVC-03` | **Pencarian Layanan** | Search bar dengan real-time search (debounce) |
+| 12 | `SVC-04` | **Akses Layanan Instansi** | Buka web-app layanan via Chrome Custom Tab / WebView |
+
+### 👤 Profil & Akun
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 13 | `USR-01` | **Profil Pengguna** | Lihat profil (nama, email, NIK, foto), status KYC |
+| 14 | `USR-02` | **Edit Profil** | Edit data profil, upload/ganti foto profil |
+| 15 | `USR-03` | **Ubah Password** | Ganti password dari dalam aplikasi |
+| 16 | `USR-04` | **Verifikasi KYC** | Cek status KYC, upload dokumen KYC (jika diperlukan) |
+
+### 🔔 Notifikasi
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 17 | `NOTIF-01` | **Push Notification** | Integrasi Firebase Cloud Messaging (FCM), register token |
+| 18 | `NOTIF-02` | **Notification Center** | Daftar notifikasi in-app, tandai sudah dibaca, hapus notifikasi |
+
+### 📜 Riwayat
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 19 | `HIST-01` | **Riwayat Aktivitas** | Log riwayat akses/aktivitas pengguna di aplikasi |
+
+### ⚙️ Pengaturan
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 20 | `SET-01` | **Pengaturan Aplikasi** | Pengaturan notifikasi, tentang aplikasi, versi, kebijakan privasi |
+
+### 🛠️ Sistem & Infrastruktur
+
+| **No** | **Kode** | **Nama Modul** | **Fitur Utama** |
+|---|---|---|---|
+| 21 | `SYS-01` | **Offline Caching** | Local database (sqflite/Hive), penyimpanan data offline |
+| 22 | `SYS-02` | **Connectivity Checker** | Deteksi online/offline, indikator status koneksi |
+| 23 | `SYS-03` | **Force Update** | Cek versi terbaru, paksa update jika versi lama |
+| 24 | `SYS-04` | **Deep Linking** | Handle link dari notifikasi/email (reset password, verifikasi) |
+| 25 | `SYS-05` | **Error Handling & Crash Reporting** | Global error handler, Firebase Crashlytics |
+
+> **Total: 25 Modul** — mencakup seluruh kebutuhan fungsional dan non-fungsional aplikasi JOSS Mobile.
+
+---
+
+## III. Rincian Jadwal & Output per Minggu
 
 ### Ringkasan Timeline (Gantt Chart Overview)
 
@@ -65,7 +138,7 @@
 
 ---
 
-#### II.I — Minggu 1: Kick-off & Setup Proyek
+#### III.I — Minggu 1: Kick-off & Setup Proyek
 
 | **Item**       | **Detail**                                                                                                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -76,7 +149,7 @@
 
 ---
 
-#### II.II — Minggu 2: Desain UI/UX & Prototyping
+#### III.II — Minggu 2: Desain UI/UX & Prototyping
 
 | **Item**       | **Detail**                                                                                                                                                                                            |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -87,7 +160,7 @@
 
 ---
 
-#### II.III — Minggu 3: Integrasi Autentikasi SSO & API Core
+#### III.III — Minggu 3: Integrasi Autentikasi SSO & API Core
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -98,7 +171,7 @@
 
 ---
 
-#### II.IV — Minggu 4: Manajemen Sesi & Keamanan Akses
+#### III.IV — Minggu 4: Manajemen Sesi & Keamanan Akses
 
 | **Item**       | **Detail**                                                                                                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -115,7 +188,7 @@
 
 ---
 
-#### II.V — Minggu 5: Dashboard & Navigasi Utama
+#### III.V — Minggu 5: Dashboard & Navigasi Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                     |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -126,7 +199,7 @@
 
 ---
 
-#### II.VI — Minggu 6: Modul Fitur Layanan Utama
+#### III.VI — Minggu 6: Modul Fitur Layanan Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -137,7 +210,7 @@
 
 ---
 
-#### II.VII — Minggu 7: Push Notification & Pengaturan Akun
+#### III.VII — Minggu 7: Push Notification & Pengaturan Akun
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                               |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -148,7 +221,7 @@
 
 ---
 
-#### II.VIII — Minggu 8: Offline Caching & Optimasi
+#### III.VIII — Minggu 8: Offline Caching & Optimasi
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -165,7 +238,7 @@
 
 ---
 
-#### II.IX — Minggu 9: Alpha Testing & Bug Fixing
+#### III.IX — Minggu 9: Alpha Testing & Bug Fixing
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -176,7 +249,7 @@
 
 ---
 
-#### II.X — Minggu 10: UAT & Penyempurnaan Aplikasi
+#### III.X — Minggu 10: UAT & Penyempurnaan Aplikasi
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                       |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -187,7 +260,7 @@
 
 ---
 
-#### II.XI — Minggu 11: Training of Trainer (ToT) & Finalisasi Build
+#### III.XI — Minggu 11: Training of Trainer (ToT) & Finalisasi Build
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -198,7 +271,7 @@
 
 ---
 
-#### II.XII — Minggu 12: Deployment, Serah Terima, & Penutupan Proyek
+#### III.XII — Minggu 12: Deployment, Serah Terima, & Penutupan Proyek
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -209,7 +282,7 @@
 
 ---
 
-## III. Ruang Lingkup Teknis — Apa yang Harus Dikerjakan Tim
+## IV. Ruang Lingkup Teknis — Apa yang Harus Dikerjakan Tim
 
 Mengingat **portal web JOSS dan SSO Keycloak dari Fase 1 sudah live**, berikut adalah fokus teknis untuk Fase 2:
 
@@ -263,7 +336,7 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 
 ---
 
-## IV. Daftar Deliverables / Output Utama Proyek
+## V. Daftar Deliverables / Output Utama Proyek
 
 | **No** | **Deliverable**                                  | **Target Minggu** |
 | ------ | ------------------------------------------------ | ------------------ |
@@ -282,7 +355,7 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 
 ---
 
-## V. Catatan & Risiko
+## VI. Catatan & Risiko
 
 | **Risiko**                                     | **Mitigasi**                                                                  |
 | ---------------------------------------------- | ----------------------------------------------------------------------------- |
