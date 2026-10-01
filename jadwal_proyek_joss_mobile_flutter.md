@@ -59,14 +59,6 @@
 
 ---
 
-> **Catatan Diskusi: Strategi Integrasi WebView & SSO Keycloak**
-> Terkait mekanisme saat user mengklik icon layanan (misal: MKJU) dan diarahkan ke web-app, terdapat 2 opsi arsitektur agar sesi SSO tidak terputus (tidak perlu login ulang):
-> 
-> *   **Opsi 1 (Direkomendasikan) — Chrome Custom Tabs (CCT):** Alih-alih menggunakan WebView biasa, layanan dibuka menggunakan CCT. Karena berbagi *cookie jar* yang sama dengan Chrome (tempat login SSO di awal), sesi Keycloak otomatis terbaca. Ini adalah *best practice* keamanan standar tanpa perlu modifikasi backend layanan.
-> *   **Opsi 2 (Alternatif) — Token Exchange / One-Time Ticket:** Jika tampilan diwajibkan menggunakan WebView murni (tanpa header address bar sama sekali), diperlukan pengembangan mekanisme pertukaran token. Backend JOSS akan menukar *Access Token* dengan URL tiket sekali pakai, yang kemudian di-load oleh WebView untuk membuat sesi baru di dalam layanan. Membutuhkan penyesuaian API tambahan.
-
----
-
 ### [FASE 1] BULAN 1 — Perencanaan, Integrasi API, & Autentikasi SSO Mobile
 
 > **Fokus:** Menyiapkan pondasi aplikasi dan melakukan integrasi core SSO ke platform mobile (Android & iOS).
