@@ -12,7 +12,7 @@
 | **Klien**                   | Pemerintah Kabupaten Jombang — Dinas Komunikasi dan Informatika            |
 | **Fase**                    | Fase 2 — Pengembangan Portal Aplikasi Mobile (Flutter: Android & iOS)      |
 | **Durasi**                  | 3 Bulan (12 Minggu Efektif)                                               |
-| **Estimasi Mulai**          | Minggu ke-2 s.d. ke-3 Oktober 2026 *(estimasi mundur 1–2 minggu dari 1 Oktober)* |
+| **Estimasi Mulai**          | Minggu ke-1 s.d. ke-2 Oktober 2026 *(estimasi mundur 1–2 minggu dari 1 Oktober)* |
 | **Estimasi Selesai**        | Minggu ke-2 s.d. ke-3 Januari 2027                                         |
 | **Portal Web (Fase 1)**     | ✅ Live — https://joss.jombangkab.go.id                                  |
 | **SSO Server**              | Keycloak — https://sso-v2.jombangkab.go.id (Realm: `jombangkab`)          |
@@ -40,9 +40,9 @@
 
 | **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** | **Jan** |
 | --- | --- | --- | --- | --- | --- |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 3–4 | Desain UI/UX Figma & Persetujuan Klien <br> *(Goal: Pihak Jombang setuju dengan desain UI/UX mobile baru)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Desain UI/UX Figma & Persetujuan Klien <br> *(Goal: Pihak Jombang setuju dengan desain UI/UX mobile baru)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt–Nov Minggu 4–1 | Integrasi API SSO & Eksekusi Hasil Mapping, modul login/register <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">██</span> | <span style="color:#2563EB;">██</span> |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Nov Minggu 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> |  | <span style="color:#2563EB;">███</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 2–3 | **Sprint 1:** Dashboard utama, navigasi sesuai UI/UX Figma <br> *(Modul Dashboard & Navigasi)* <br> <span style="color:#16A34A;">**• Sprint Review 1 (Demo UI & Flow)**</span> |  | <span style="color:#16A34A;">███</span> |  |  |
@@ -74,7 +74,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-2/ke-3 Oktober 2026                                                                                                                                               |
+| **Periode**    | Minggu ke-1/ke-2 Oktober 2026                                                                                                                                               |
 | **Aktivitas**  | 🔹 Koordinasi internal tim & kick-off meeting bersama klien Jombang <br> 🔹 Finalisasi KAK (Kerangka Acuan Kerja) <br> 🔹 Setup arsitektur proyek Flutter (Android & iOS, repository, CI/CD pipeline, code convention) <br> 🔹 Review dan mapping endpoint API dari portal web JOSS <br> 🔹 Registrasi client `joss-mobile` di Keycloak (realm `jombangkab`) <br> 🔹 Identifikasi API yang sudah ada vs API yang perlu dibangun baru <br> 🔹 Penyusunan wireframe awal |
 | **Output**     | ✅ Dokumen KAK Final yang disetujui kedua belah pihak <br> ✅ Project Repository & Boilerplate Flutter (Dart) <br> ✅ Client `joss-mobile` terdaftar di Keycloak <br> ✅ Dokumen Gap Analysis API (existing vs required) <br> ✅ Wireframe UI/UX (Low-Fidelity) |
 | **PIC**        | Project Manager, Lead Developer, UI/UX Designer                                                                                                                             |
@@ -85,7 +85,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                            |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-3/ke-4 Oktober 2026                                                                                                                                                                         |
+| **Periode**    | Minggu ke-1/ke-2 Oktober 2026                                                                                                                                                                         |
 | **Aktivitas**  | 🔹 Finalisasi desain UI/UX di Figma (High-Fidelity) untuk seluruh halaman utama <br> 🔹 Desain halaman: Splash Screen, Onboarding, Login/Register, Lupa Password, Dashboard, Profil Pengguna <br> 🔹 Penyusunan Design System (warna, tipografi, komponen reusable) <br> 🔹 Review & approval desain oleh klien |
 | **Output**     | ✅ Dokumen Desain UI/UX Final (Figma Link) — disetujui klien <br> ✅ Design System / Style Guide Aplikasi <br> ✅ Prototype Interaktif (Clickable Prototype)                                          |
 | **PIC**        | UI/UX Designer, Project Manager                                                                                                                                                                       |
