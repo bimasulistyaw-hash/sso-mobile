@@ -10,6 +10,7 @@
 ## I. Pertanyaan Umum Proyek
 
 ### 1. Usulan Prakondisi: Assessment Kesiapan SDM & Kebutuhan
+> [!NOTE]
 > **Konteks:** Menghindari masalah operasional seperti di Fase 1 (SSO sudah jadi tapi tidak berjalan optimal/terjadi gap struktural).
 > **Usulan:** Kami akan melakukan *assessment awal* sebelum pengerjaan Fase 2 dimulai.
 
@@ -20,6 +21,7 @@
 ---
 
 ### 2. Rakor & Finalisasi KAK
+> [!NOTE]
 > Perlu dijadwalkan **Rapat Koordinasi (Rakor)** dengan pihak Jombang untuk finalisasi **Kerangka Acuan Kerja (KAK)**. Target output rakor adalah dokumen KAK Final yang disepakati kedua belah pihak.
 
 - ✏️ **Kapan jadwal Rakor via Zoom dapat dilaksanakan?**
@@ -29,6 +31,7 @@
 ---
 
 ### 3. Multi-Tema Aplikasi
+> [!NOTE]
 > Terkait tampilan/tema aplikasi mobile JOSS.
 
 - ✏️ **Apakah aplikasi perlu mendukung multi-tema (light mode & dark mode)?**
@@ -38,6 +41,7 @@
 ---
 
 ### 4. Mapping Person & Delegasi Penanggung Jawab
+> [!NOTE]
 > Perlu kejelasan struktur tim dan penanggung jawab dari kedua sisi (tim konsultan & pihak Jombang).
 
 - ✏️ **Siapa PIC (Person in Charge) dari pihak Jombang untuk proyek ini?**
@@ -47,6 +51,7 @@
 ---
 
 ### 5. Presentasi Desain Mobile
+> [!NOTE]
 > Desain UI/UX (High-Fidelity di Figma) perlu dipresentasikan dan disetujui klien sebelum masuk fase development.
 
 - ✏️ **Presentasi desain dijadwalkan di minggu ke berapa?** *(Saat ini di jadwal ada di Minggu 2, apakah realistis?)*
@@ -56,6 +61,7 @@
 ---
 
 ### 6. Modul Berita & Integrasi Portal
+> [!NOTE]
 > Berdasarkan referensi portal JSS Jogjakota, ada kebutuhan integrasi modul berita/informasi di aplikasi mobile.
 
 - ✏️ **Apakah Pemkab Jombang sudah punya portal berita resmi yang bisa diintegrasikan via API?**
@@ -66,6 +72,7 @@
 ---
 
 ### 7. Jadwal TOT (Training of Trainer)
+> [!NOTE]
 > TOT dijadwalkan di fase akhir proyek untuk transfer knowledge ke tim Jombang.
 
 - ✏️ **Apakah ada permintaan TOT SSO (Keycloak) terpisah di bulan November?** *(Di luar TOT aplikasi mobile yang dijadwalkan di Minggu 11.)*
@@ -74,6 +81,7 @@
 ---
 
 ### 8. Format Pelaksanaan TOT
+> [!NOTE]
 > Perlu kejelasan format pelaksanaan TOT agar persiapan materi dan logistik bisa disiapkan.
 
 - ✏️ **TOT dilaksanakan secara online (Zoom) atau offline (tatap muka di Jombang)?**
@@ -83,6 +91,7 @@
 ---
 
 ### 9. Delegasi Penanggung Jawab Mobile Development
+> [!NOTE]
 > Terkait pembagian tanggung jawab pengembangan antara tim konsultan dan programmer Kominfo Jombang.
 
 - ✏️ **Apakah ada penunjukan resmi programmer dari Kominfo Jombang yang akan di-assign untuk mobile development?**
@@ -93,6 +102,7 @@
 
 ## II. Klarifikasi Teknis dengan MBO
 
+> [!NOTE]
 > Poin-poin berikut merupakan hal teknis yang perlu diklarifikasi terkait pembagian kerja dan mekanisme transfer knowledge.
 
 ### A. Setup Repository & Infrastruktur Dasar
@@ -140,4 +150,5 @@
 
 ---
 
+> [!IMPORTANT]
 > **Dokumen ini akan dibawa sebagai bahan diskusi pada Rakor berikutnya. Setiap poin yang sudah terjawab akan di-update statusnya menjadi ✅ Terjawab.**
