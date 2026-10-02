@@ -9,9 +9,9 @@
 
 ## I. Pertanyaan Umum Proyek
 
-### 1. Usulan Prakondisi: Assessment Kesiapan SDM & Kebutuhan (Oleh Bima Sulistya Wibawa)
+### 1. Usulan Prakondisi: Assessment Kesiapan SDM & Kebutuhan
 > **Konteks:** Menghindari masalah operasional seperti di Fase 1 (SSO sudah jadi tapi tidak berjalan optimal/terjadi gap struktural).
-> **Usulan:** Bima Sulistya Wibawa akan melakukan *assessment awal* sebelum pengerjaan Fase 2 dimulai.
+> **Usulan:** Kami akan melakukan *assessment awal* sebelum pengerjaan Fase 2 dimulai.
 
 - ✏️ **Assessment Personil:** Mengecek secara langsung kesiapan, pemahaman, dan kapabilitas delegasi yang ditunjuk (baik struktural maupun teknis).
 - ✏️ **Analisis Kebutuhan Lanjutan:** Memastikan kedua belah pihak (vendor & klien) memiliki pemahaman yang persis sama tentang *apa yang harus dikerjakan* (What needs to be done).
