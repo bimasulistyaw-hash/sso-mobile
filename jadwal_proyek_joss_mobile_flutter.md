@@ -47,6 +47,7 @@
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Okt–Nov Minggu 4–2 | **Sprint 1:** Dashboard utama, navigasi sesuai UI/UX Figma <br> *(Modul Dashboard & Navigasi)* <br> <span style="color:#16A34A;">**• Sprint Review 1 (Demo UI & Flow)**</span> | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Sprint 2:** Modul layanan utama (profil, riwayat, layanan instansi) <br> *(Modul Profil, Riwayat, Layanan)* <br> <span style="color:#16A34A;">**• Sprint Review 2 (Demo Fungsi Layanan)**</span> |  | <span style="color:#16A34A;">███</span> |  |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Extra:** ToT & Pelatihan Teknis SSO Keycloak (Khusus Kominfo Jombang) <br> *(Goal: Pemahaman penuh integrasi portal & SSO)* |  | <span style="color:#16A34A;">███</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov–Des Minggu 4–1 | **Sprint 3:** Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* <br> <span style="color:#16A34A;">**• Sprint Review 3 (Demo Notifikasi)**</span> |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 1–2 | **Sprint 4:** Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* <br> <span style="color:#16A34A;">**• Review Akhir Fase B (Final Check Stabilitas)**</span> |  |  | <span style="color:#16A34A;">███</span> |  |
 | <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |  |
@@ -141,6 +142,18 @@
 | **PIC**        | Flutter Developer, Backend Developer (support API)                                                                                                                                                                                                                   |
 
 ---
+
+#### II.VI.b — Extra: ToT & Pelatihan Teknis SSO Keycloak (Khusus Kominfo Jombang)
+
+| **Item**       | **Detail**                                                                                                                                                                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Periode**    | Minggu ke-3/ke-4 November 2026                                                                                                                                                                                                                                      |
+| **Aktivitas**  | 🔹 Pelatihan khusus delegasi teknis Dinas Kominfo Jombang mengenai arsitektur SSO Keycloak <br> 🔹 Penjelasan detail proses integrasi aplikasi & portal dengan SSO Keycloak <br> 🔹 Memastikan tidak ada *knowledge gap* dari fase sebelumnya <br> 🔹 Praktek langsung pendaftaran klien dan manajemen akses Keycloak |
+| **Output**     | ✅ Pemahaman penuh dari sisi teknis Kominfo mengenai SSO Keycloak <br> ✅ Laporan Pelaksanaan ToT Khusus Integrasi SSO                                                                                       |
+| **PIC**        | Project Manager, Lead Developer, Perwakilan Teknis Kominfo Jombang                                                                                                                                                                                                                   |
+
+---
+
 
 #### II.VII — Minggu 7: Push Notification & Pengaturan Akun
 
