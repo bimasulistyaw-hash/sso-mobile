@@ -45,7 +45,7 @@
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Pengembangan & Penyesuaian API Backend Tambahan <br> *(Goal: API Backend siap dikonsumsi mobile)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Desain UI/UX Portal Layanan & Persetujuan Klien <br> <span style="color:#2563EB;">*(Goal: Pihak Jombang setuju dengan desain UI/UX Portal Mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Meeting Evaluasi & Penyempurnaan Desain UI/UX <br> *(Goal: Finalisasi iterasi desain dengan MBO Jombang)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Integrasi API SSO & Eksekusi Hasil Mapping, modul login/register <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">███</span> |  |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Integrasi API SSO, Modul Login/Register & Finalisasi Mapping <br> *(Goal: Seluruh kebutuhan API final & Modul SSO terintegrasi penuh)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Okt–Nov Minggu 4–2 | **Sprint 1:** Portal Layanan Utama & Katalog Aplikasi sesuai UI/UX Figma <br> *(Modul Portal Layanan & Navigasi)* <br> <span style="color:#16A34A;">**• Sprint Review 1 (Demo UI & Flow)**</span> | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Sprint 2:** Modul layanan utama (profil, riwayat, layanan instansi) <br> *(Modul Profil, Riwayat, Layanan)* <br> <span style="color:#16A34A;">**• Sprint Review 2 (Demo Fungsi Layanan)**</span> |  | <span style="color:#16A34A;">███</span> |  |  |
@@ -107,13 +107,13 @@
 ---
 
 
-#### II.III — Minggu 3: Integrasi Autentikasi SSO & API Core
+#### II.III — Minggu 3: Integrasi Autentikasi SSO & Finalisasi Kebutuhan API
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Minggu ke-2/ke-3 Oktober 2026                                                                                                                                                                                            |
 | **Aktivitas**  | 🔹 Implementasi autentikasi via **Keycloak OIDC + PKCE** menggunakan library **flutter_appauth** <br> 🔹 Flow: Login → In-App Browser → Keycloak → Redirect URI → Access Token <br> 🔹 Integrasi endpoint Keycloak realm `jombangkab` (token, userinfo, logout) <br> 🔹 Implementasi **JWT Token Handling**: penyimpanan, parsing, dan validasi token <br> 🔹 Setup **Dio/HTTP** + Interceptor untuk auto-attach Bearer token <br> 🔹 Pengembangan **API backend tambahan** yang belum tersedia untuk mobile |
-| **Output**     | ✅ Modul Login via Keycloak OIDC+PKCE berjalan <br> ✅ Register & Lupa Password via Keycloak flow <br> ✅ Network Layer (Dio / HTTP Interceptor) terkonfigurasi <br> ✅ API backend tambahan untuk mobile (v1) <br> ✅ Unit Test untuk modul autentikasi                                 |
+| **Output**     | ✅ Modul Login via Keycloak OIDC+PKCE berjalan <br> ✅ Register & Lupa Password via Keycloak flow <br> ✅ Network Layer (Dio / HTTP Interceptor) terkonfigurasi <br> ✅ **Seluruh Kebutuhan & Mapping API Mobile Final/Terpenuhi** <br> ✅ Unit Test untuk modul autentikasi                                 |
 | **PIC**        | Lead Developer, Backend Developer (support)                                                                                                                                                                                                |
 
 ---
