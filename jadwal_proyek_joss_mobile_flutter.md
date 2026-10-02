@@ -51,7 +51,8 @@
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Sprint 2:** Modul layanan utama (profil, riwayat, layanan instansi) <br> *(Modul Profil, Riwayat, Layanan)* <br> <span style="color:#16A34A;">**• Internal Review (QA Fungsi Layanan)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 2 (Demo Fungsi Layanan)**</span> |  | <span style="color:#16A34A;">███</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Extra:** ToT & Pelatihan Teknis SSO Keycloak (Khusus Kominfo Jombang) <br> <span style="color:#16A34A;">*(Goal: Pemahaman penuh integrasi portal & SSO)*</span> |  | <span style="color:#16A34A;">███</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov–Des Minggu 4–1 | **Sprint 3:** Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* <br> <span style="color:#16A34A;">**• Internal Review (QA Notifikasi)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 3 (Demo Notifikasi)**</span> |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 1–2 | **Sprint 4:** Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* <br> <span style="color:#16A34A;">**• Internal Review (QA Akhir Fase B)**</span> <br> <span style="color:#16A34A;">**• Review Akhir Fase B bersama Kominfo Jombang (Laporan App Sesuai Rencana)**</span> |  |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 1–2 | **Sprint 4:** Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* <br> <span style="color:#16A34A;">**• Internal Review (QA Akhir Fase B)**</span> |  |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 2 | **Review Akhir Fase B bersama Kominfo Jombang** <br> <span style="color:#16A34A;">*(Goal: Laporan aplikasi berjalan sesuai rencana & siap Alpha Test)*</span> |  |  | <span style="color:#16A34A;">███</span> |  |
 | <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |  |
 | <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | <span style="color:#EA580C;">███</span> |  |
 | <span style="color:#EA580C;">**[C]**</span><br>Des–Jan Minggu 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | <span style="color:#EA580C;">██</span> | <span style="color:#EA580C;">██</span> |
@@ -185,9 +186,20 @@
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Minggu ke-1/ke-2 Desember 2026                                                                                                                                                                                                                                          |
-| **Aktivitas**  | 🔹 Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> 🔹 Optimasi performa aplikasi: memory, network call, dan battery usage <br> 🔹 Implementasi **connectivity checker** (online/offline mode) <br> 🔹 **Review Progress Akhir Fase B bersama Klien** |
-| **Output**     | ✅ Local Database & Offline Caching <br> ✅ Connectivity-aware UX (indikator online/offline) <br> ✅ Laporan optimasi performa aplikasi <br> ✅ Laporan Review Progress Fase B |
+| **Aktivitas**  | 🔹 Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> 🔹 Optimasi performa aplikasi: memory, network call, dan battery usage <br> 🔹 Implementasi **connectivity checker** (online/offline mode) <br> 🔹 **Internal Review (QA Final Fase B):** Pengecekan stabilitas & integrasi seluruh modul |
+| **Output**     | ✅ Local Database & Offline Caching <br> ✅ Connectivity-aware UX (indikator online/offline) <br> ✅ Laporan optimasi performa aplikasi <br> ✅ Hasil QA Stabilitas Modul |
 | **PIC**        | Lead Developer, Flutter Developer                                                                                                                                                                                                                                        |
+
+---
+
+#### II.VIII.b — Review Akhir Fase B bersama Kominfo Jombang
+
+| **Item**       | **Detail**                                                                                                                                                                                                                                                              |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Periode**    | Minggu ke-2 Desember 2026                                                                                                                                                                                                                                          |
+| **Aktivitas**  | 🔹 Laporan menyeluruh hasil Fase B kepada Kominfo Jombang <br> 🔹 Verifikasi bahwa aplikasi mobile sudah berjalan sesuai rencana dan fitur yang disepakati lengkap <br> 🔹 Persetujuan/Sign-off untuk melanjutkan ke Fase C (Alpha Test & UAT) |
+| **Output**     | ✅ Laporan Kesesuaian Aplikasi dengan Rencana Awal <br> ✅ Persetujuan (*Sign-off*) Fase B dari Klien |
+| **PIC**        | Project Manager, Lead Developer, Kominfo Jombang |
 
 ---
 
