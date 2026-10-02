@@ -41,7 +41,7 @@
 | **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** | **Jan** |
 | --- | --- | --- | --- | --- | --- |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Pekan 2–3 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Pekan 2–3 | Mapping API JOSS & identifikasi kebutuhan endpoint <br> *(Gap Analysis API & Endpoint)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Pekan 2–3 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Pekan 3–4 | Desain UI/UX Figma (High-Fidelity), Design System <br> *(Design System & UI/UX)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt–Nov Pekan 4–1 | Integrasi API SSO & Eksekusi Hasil Mapping, modul login/register <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">██</span> | <span style="color:#2563EB;">██</span> |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Nov Pekan 1–2 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> |  | <span style="color:#2563EB;">███</span> |  |  |
