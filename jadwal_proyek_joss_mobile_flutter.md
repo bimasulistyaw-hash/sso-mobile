@@ -41,7 +41,7 @@
 | **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** | **Jan** |
 | --- | --- | --- | --- | --- | --- |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* <br> <span style="color:#2563EB;">*(Goal: Modul terpetakan & approval scope prioritas dari Top Management)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Pengembangan & Penyesuaian API Backend Tambahan <br> <span style="color:#2563EB;">*(Goal: API Backend siap dikonsumsi mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Desain UI/UX Portal Layanan & Persetujuan Klien <br> <span style="color:#2563EB;">*(Goal: Pihak Jombang setuju dengan desain UI/UX Portal Mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Meeting Evaluasi & Penyempurnaan Desain UI/UX <br> <span style="color:#2563EB;">*(Goal: Finalisasi iterasi desain dengan MBO Jombang)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
@@ -79,7 +79,7 @@
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Minggu ke-1/ke-2 Oktober 2026                                                                                                                                               |
 | **Aktivitas**  | 🔹 Koordinasi internal tim & kick-off meeting bersama klien Jombang <br> 🔹 Finalisasi KAK (Kerangka Acuan Kerja) <br> 🔹 Setup arsitektur proyek Flutter (Android & iOS, repository, CI/CD pipeline, code convention) <br> 🔹 Review dan mapping endpoint API dari portal web JOSS <br> 🔹 Registrasi client `joss-mobile` di Keycloak (realm `jombangkab`) <br> 🔹 Identifikasi API yang sudah ada vs API yang perlu dibangun baru <br> 🔹 Penyusunan wireframe awal |
-| **Output**     | ✅ Dokumen KAK Final yang disetujui kedua belah pihak <br> ✅ Project Repository & Boilerplate Flutter (Dart) <br> ✅ Client `joss-mobile` terdaftar di Keycloak <br> ✅ Dokumen Gap Analysis API (existing vs required) <br> ✅ Wireframe UI/UX (Low-Fidelity) |
+| **Output**     | ✅ Dokumen KAK Final yang disetujui kedua belah pihak <br> ✅ Project Repository & Boilerplate Flutter (Dart) <br> ✅ Client `joss-mobile` terdaftar di Keycloak <br> ✅ Dokumen Gap Analysis API (existing vs required) <br> ✅ **Persetujuan scope modul (ceklist lolos/di-keep) dari Top Management** <br> ✅ Wireframe UI/UX (Low-Fidelity) |
 | **PIC**        | Project Manager, Lead Developer, UI/UX Designer                                                                                                                             |
 
 ---
