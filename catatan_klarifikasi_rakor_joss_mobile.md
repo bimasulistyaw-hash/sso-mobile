@@ -2,7 +2,7 @@
 ## Proyek: JOSS Mobile — SSO Kabupaten Jombang (Fase 2)
 
 **Tanggal Penyusunan:** 1 Oktober 2026
-**Tujuan:** Daftar pertanyaan dan poin klarifikasi yang perlu dibahas bersama pihak **MBO / Pemerintah Kabupaten Jombang** sebelum kick-off proyek dimulai.
+**Tujuan:** Daftar pertanyaan dan poin klarifikasi yang perlu dibahas bersama pihak **MBO** sebelum kick-off proyek dimulai.
 **Status:** ⏳ Menunggu Rakor
 
 ---
