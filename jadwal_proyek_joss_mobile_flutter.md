@@ -42,6 +42,7 @@
 | --- | --- | --- | --- | --- | --- |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Kick-off, finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* | <span style="color:#2563EB;">███</span> |  |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Pengembangan & Penyesuaian API Backend Tambahan <br> *(Goal: API Backend siap dikonsumsi mobile)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Desain UI/UX Portal Layanan & Persetujuan Klien <br> <span style="color:#2563EB;">*(Goal: Pihak Jombang setuju dengan desain UI/UX Portal Mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Integrasi API SSO & Eksekusi Hasil Mapping, modul login/register <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> | <span style="color:#2563EB;">███</span> |  |  |  |
@@ -92,6 +93,18 @@
 | **PIC**        | UI/UX Designer, Project Manager                                                                                                                                                                       |
 
 ---
+
+#### II.II.b — Pengembangan & Penyesuaian API Backend Tambahan
+
+| **Item**       | **Detail**                                                                                                                                                                  |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Periode**    | Minggu ke-2/ke-3 Oktober 2026                                                                                                                                               |
+| **Aktivitas**  | 🔹 Eksekusi hasil Gap Analysis API <br> 🔹 Pembuatan endpoint backend baru khusus mobile (jika belum ter-cover oleh web JOSS) <br> 🔹 Penyesuaian response API agar mobile-friendly |
+| **Output**     | ✅ API Backend tambahan siap dikonsumsi oleh aplikasi mobile <br> ✅ Dokumentasi API (Swagger/Postman) ter-update |
+| **PIC**        | Backend Developer, Lead Developer |
+
+---
+
 
 #### II.III — Minggu 3: Integrasi Autentikasi SSO & API Core
 
