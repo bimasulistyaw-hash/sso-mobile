@@ -52,7 +52,7 @@
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Extra:** ToT & Pelatihan Teknis SSO Keycloak (Khusus Kominfo Jombang) <br> <span style="color:#16A34A;">*(Goal: Pemahaman penuh integrasi portal & SSO)*</span> |  | <span style="color:#16A34A;">███</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov–Des Minggu 4–1 | **Sprint 3:** Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* <br> <span style="color:#16A34A;">**• Internal Review (QA Notifikasi)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 3 (Demo Notifikasi)**</span> |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 1–2 | **Sprint 4:** Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* <br> <span style="color:#16A34A;">**• Internal Review (QA Akhir Fase B)**</span> |  |  | <span style="color:#16A34A;">███</span> |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 2 | **Review Akhir Fase B bersama Kominfo Jombang** <br> <span style="color:#16A34A;">*(Goal: Laporan aplikasi berjalan sesuai rencana & siap Alpha Test)*</span> |  |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 2 | **Review Akhir Fase B & Penyesuaian Minor bersama Kominfo** <br> <span style="color:#16A34A;">*(Goal: Finalisasi fitur & persetujuan masuk Alpha Test)*</span> |  |  | <span style="color:#16A34A;">███</span> |  |
 | <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |  |
 | <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | <span style="color:#EA580C;">███</span> |  |
 | <span style="color:#EA580C;">**[C]**</span><br>Des–Jan Minggu 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | <span style="color:#EA580C;">██</span> | <span style="color:#EA580C;">██</span> |
@@ -192,13 +192,13 @@
 
 ---
 
-#### II.VIII.b — Review Akhir Fase B bersama Kominfo Jombang
+#### II.VIII.b — Review Akhir Fase B & Penyesuaian Minor
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Minggu ke-2 Desember 2026                                                                                                                                                                                                                                          |
-| **Aktivitas**  | 🔹 Laporan menyeluruh hasil Fase B kepada Kominfo Jombang <br> 🔹 Verifikasi bahwa aplikasi mobile sudah berjalan sesuai rencana dan fitur yang disepakati lengkap <br> 🔹 Persetujuan/Sign-off untuk melanjutkan ke Fase C (Alpha Test & UAT) |
-| **Output**     | ✅ Laporan Kesesuaian Aplikasi dengan Rencana Awal <br> ✅ Persetujuan (*Sign-off*) Fase B dari Klien |
+| **Aktivitas**  | 🔹 Laporan menyeluruh hasil Fase B kepada Kominfo Jombang <br> 🔹 Verifikasi kesesuaian fitur aplikasi mobile dengan rencana awal <br> 🔹 **Penyesuaian minor/finalisasi** berdasarkan feedback cepat dari Kominfo <br> 🔹 Persetujuan/Sign-off untuk melanjutkan ke Fase C (Alpha Test & UAT) |
+| **Output**     | ✅ Laporan Kesesuaian Aplikasi dengan Rencana Awal <br> ✅ Implementasi Penyesuaian Minor (jika ada) <br> ✅ Persetujuan (*Sign-off*) Fase B dari Klien |
 | **PIC**        | Project Manager, Lead Developer, Kominfo Jombang |
 
 ---
