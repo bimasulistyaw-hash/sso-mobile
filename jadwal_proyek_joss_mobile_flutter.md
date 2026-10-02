@@ -45,7 +45,7 @@
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Desain UI/UX Figma & Persetujuan Klien <br> *(Goal: Pihak Jombang setuju dengan desain UI/UX mobile baru)* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Integrasi API SSO & Eksekusi Hasil Mapping, modul login/register <br> *(Modul SSO (Keycloak, AppAuth))* | <span style="color:#2563EB;">███</span> |  |  |  |
 | <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Okt–Nov Minggu 4–2 | **Sprint 1:** Dashboard utama, navigasi sesuai UI/UX Figma <br> *(Modul Dashboard & Navigasi)* <br> <span style="color:#16A34A;">**• Sprint Review 1 (Demo UI & Flow)**</span> | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Okt–Nov Minggu 4–2 | **Sprint 1:** Portal Layanan Utama & Katalog Aplikasi sesuai UI/UX Figma <br> *(Modul Portal Layanan & Navigasi)* <br> <span style="color:#16A34A;">**• Sprint Review 1 (Demo UI & Flow)**</span> | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Sprint 2:** Modul layanan utama (profil, riwayat, layanan instansi) <br> *(Modul Profil, Riwayat, Layanan)* <br> <span style="color:#16A34A;">**• Sprint Review 2 (Demo Fungsi Layanan)**</span> |  | <span style="color:#16A34A;">███</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Extra:** ToT & Pelatihan Teknis SSO Keycloak (Khusus Kominfo Jombang) <br> *(Goal: Pemahaman penuh integrasi portal & SSO)* |  | <span style="color:#16A34A;">███</span> |  |  |
 | <span style="color:#16A34A;">**[B]**</span><br>Nov–Des Minggu 4–1 | **Sprint 3:** Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* <br> <span style="color:#16A34A;">**• Sprint Review 3 (Demo Notifikasi)**</span> |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
@@ -87,7 +87,7 @@
 | **Item**       | **Detail**                                                                                                                                                                                            |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Minggu ke-1/ke-2 Oktober 2026                                                                                                                                                                         |
-| **Aktivitas**  | 🔹 Finalisasi desain UI/UX di Figma (High-Fidelity) untuk seluruh halaman utama <br> 🔹 Desain halaman: Splash Screen, Onboarding, Login/Register, Lupa Password, Dashboard, Profil Pengguna <br> 🔹 Penyusunan Design System (warna, tipografi, komponen reusable) <br> 🔹 Review & approval desain oleh klien |
+| **Aktivitas**  | 🔹 Finalisasi desain UI/UX di Figma (High-Fidelity) untuk seluruh halaman utama <br> 🔹 Desain halaman: Splash Screen, Onboarding, Login/Register, Lupa Password, Portal Layanan Utama, Profil Pengguna <br> 🔹 Penyusunan Design System (warna, tipografi, komponen reusable) <br> 🔹 Review & approval desain oleh klien |
 | **Output**     | ✅ Dokumen Desain UI/UX Final (Figma Link) — disetujui klien <br> ✅ Design System / Style Guide Aplikasi <br> ✅ Prototype Interaktif (Clickable Prototype)                                          |
 | **PIC**        | UI/UX Designer, Project Manager                                                                                                                                                                       |
 
@@ -121,13 +121,13 @@
 
 ---
 
-#### II.V — Sprint 1: Dashboard & Navigasi Utama
+#### II.V — Sprint 1: Portal Layanan & Navigasi Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                     |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Periode**    | Minggu ke-4 Oktober / Minggu ke-2 November 2026                                                                                                                                                                                 |
-| **Aktivitas**  | 🔹 Pengembangan halaman **Dashboard Utama** setelah login berhasil <br> 🔹 Implementasi **Bottom Navigation / Drawer Navigation** <br> 🔹 Integrasi data ringkasan (summary cards, statistik, atau quick-access menu) <br> 🔹 Implementasi **pull-to-refresh** dan loading state |
-| **Output**     | ✅ Halaman Dashboard Utama aplikasi <br> ✅ Sistem Navigasi Aplikasi (Bottom Nav / Drawer) <br> ✅ Komponen UI reusable (cards, lists, loading indicators)                                                       |
+| **Aktivitas**  | 🔹 Pengembangan halaman **Portal Layanan Utama & Katalog Aplikasi** setelah login berhasil <br> 🔹 Implementasi **Bottom Navigation / Drawer Navigation** <br> 🔹 Integrasi data ringkasan (summary cards, statistik, atau quick-access menu) <br> 🔹 Implementasi **pull-to-refresh** dan loading state |
+| **Output**     | ✅ Halaman Portal Layanan Utama aplikasi <br> ✅ Sistem Navigasi Aplikasi (Bottom Nav / Drawer) <br> ✅ Komponen UI reusable (cards, lists, loading indicators)                                                       |
 | **PIC**        | Flutter Developer, UI/UX Designer                                                                                                                                                                               |
 
 ---
