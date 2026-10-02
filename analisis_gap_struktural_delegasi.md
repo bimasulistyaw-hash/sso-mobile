@@ -8,26 +8,38 @@
 
 ## I. Hierarki Analisis — Dari Kebutuhan Hingga Keberlanjutan
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    LEVEL 0: VISI & TUJUAN                   │
-│         "SSO Jombang berjalan mandiri & berkelanjutan"       │
-└──────────────────────────┬──────────────────────────────────┘
-                           │
-          ┌────────────────┼────────────────┐
-          ▼                ▼                ▼
-┌─────────────────┐ ┌──────────────┐ ┌──────────────────┐
-│  LEVEL 1:       │ │  LEVEL 2:    │ │  LEVEL 3:        │
-│  ANALISIS       │ │  ANALISIS    │ │  ANALISIS        │
-│  KEBUTUHAN      │ │  KESIAPAN    │ │  KEBERLANJUTAN   │
-│                 │ │              │ │                  │
-│  "Apa yang      │ │ "Mampukah    │ │ "Bisakah jalan   │
-│   dibutuhkan?"  │ │  jalan?"     │ │  tanpa vendor?"  │
-└────────┬────────┘ └──────┬───────┘ └────────┬─────────┘
-         │                 │                  │
-    ┌────┴────┐       ┌────┴────┐        ┌────┴────┐
-    ▼         ▼       ▼         ▼        ▼         ▼
- Teknis   Bisnis   SDM      Infra    Proses    Ownership
+```mermaid
+flowchart TD
+    L0["**LEVEL 0: VISI & TUJUAN**<br>SSO Jombang berjalan mandiri & berkelanjutan"]
+    
+    L1["**LEVEL 1: ANALISIS KEBUTUHAN**<br>Apa yang dibutuhkan?"]
+    L2["**LEVEL 2: ANALISIS KESIAPAN**<br>Mampukah jalan?"]
+    L3["**LEVEL 3: ANALISIS KEBERLANJUTAN**<br>Bisakah jalan tanpa vendor?"]
+
+    L0 --> L1
+    L0 --> L2
+    L0 --> L3
+
+    L1 --> Teknis["Teknis"]
+    L1 --> Bisnis["Bisnis"]
+
+    L2 --> SDM["SDM"]
+    L2 --> Infra["Infra"]
+
+    L3 --> Proses["Proses"]
+    L3 --> Ownership["Ownership"]
+
+    classDef level0 fill:#1e3a8a,stroke:#3b82f6,stroke-width:2px,color:#fff;
+    classDef level1 fill:#047857,stroke:#10b981,stroke-width:2px,color:#fff;
+    classDef level2 fill:#b45309,stroke:#f59e0b,stroke-width:2px,color:#fff;
+    classDef level3 fill:#7e22ce,stroke:#a855f7,stroke-width:2px,color:#fff;
+    classDef node fill:#334155,stroke:#64748b,stroke-width:1px,color:#fff;
+
+    class L0 level0;
+    class L1 level1;
+    class L2 level2;
+    class L3 level3;
+    class Teknis,Bisnis,SDM,Infra,Proses,Ownership node;
 ```
 
 ---
@@ -60,43 +72,54 @@
 
 ### A. Kesiapan SDM — Hierarki Person & Delegasi
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                    STRUKTURAL (Pejabat)                      │
-│                                                              │
-│   Kepala Dinas Kominfo                                       │
-│       └── Kabid Aptika / Infrastruktur                       │
-│               └── Kasi Pengembangan Aplikasi                 │
-│                       └── ??? (Siapa yang operasional?)      │
-│                                                              │
-│   ⚠️ GAP: Apakah ada SK penunjukan PIC SSO?                 │
-│   ⚠️ GAP: Apakah pejabat memahami apa itu SSO?              │
-└──────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph S["**STRUKTURAL (Pejabat)**"]
+        direction TB
+        Kadis["Kepala Dinas Kominfo"]
+        Kabid["Kabid Aptika / Infrastruktur"]
+        Kasi["Kasi Pengembangan Aplikasi"]
+        Ops["??? (Siapa yang operasional?)"]
 
-┌──────────────────────────────────────────────────────────────┐
-│                    TEKNIS (Pelaksana)                        │
-│                                                              │
-│   Programmer / Developer Kominfo                             │
-│       ├── Programmer A (ikut training?) ──→ Masih aktif?     │
-│       ├── Programmer B (ikut training?) ──→ Masih aktif?     │
-│       └── Programmer C (baru?)          ──→ Belum training?  │
-│                                                              │
-│   ⚠️ GAP: Apakah yang di-training = yang mengoperasikan?    │
-│   ⚠️ GAP: Apakah ada rotasi/mutasi sejak training?          │
-│   ⚠️ GAP: Apakah ada serah terima knowledge internal?       │
-└──────────────────────────────────────────────────────────────┘
+        Kadis --> Kabid --> Kasi --> Ops
+        
+        GapS1>⚠️ GAP: Apakah ada SK penunjukan PIC SSO?]
+        GapS2>⚠️ GAP: Apakah pejabat memahami apa itu SSO?]
+    end
 
-┌──────────────────────────────────────────────────────────────┐
-│                    PENGGUNA (OPD)                            │
-│                                                              │
-│   Admin OPD (tiap instansi)                                  │
-│       ├── Paham cara integrasi layanan ke SSO?               │
-│       ├── Paham cara manage user di realm masing-masing?     │
-│       └── Ada SOP internal di OPD?                           │
-│                                                              │
-│   ⚠️ GAP: OPD mungkin belum paham kenapa harus pakai SSO    │
-│   ⚠️ GAP: Tidak ada "champion" SSO di tiap OPD              │
-└──────────────────────────────────────────────────────────────┘
+    subgraph T["**TEKNIS (Pelaksana)**"]
+        direction TB
+        Prog["Programmer / Developer Kominfo"]
+        PA["Programmer A (ikut training?)<br>──→ Masih aktif?"]
+        PB["Programmer B (ikut training?)<br>──→ Masih aktif?"]
+        PC["Programmer C (baru?)<br>──→ Belum training?"]
+
+        Prog --> PA
+        Prog --> PB
+        Prog --> PC
+
+        GapT1>⚠️ GAP: Apakah yang di-training = yang mengoperasikan?]
+        GapT2>⚠️ GAP: Apakah ada rotasi/mutasi sejak training?]
+        GapT3>⚠️ GAP: Apakah ada serah terima knowledge internal?]
+    end
+
+    subgraph U["**PENGGUNA (OPD)**"]
+        direction TB
+        Admin["Admin OPD (tiap instansi)"]
+        U1["Paham cara integrasi layanan ke SSO?"]
+        U2["Paham cara manage user di realm masing-masing?"]
+        U3["Ada SOP internal di OPD?"]
+
+        Admin --> U1
+        Admin --> U2
+        Admin --> U3
+
+        GapU1>⚠️ GAP: OPD mungkin belum paham kenapa harus pakai SSO]
+        GapU2>⚠️ GAP: Tidak ada 'champion' SSO di tiap OPD]
+    end
+
+    classDef gap fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#92400e;
+    class GapS1,GapS2,GapT1,GapT2,GapT3,GapU1,GapU2 gap;
 ```
 
 ### B. Matriks Delegasi — Siapa Bertanggung Jawab Apa?
@@ -129,26 +152,24 @@
 
 ### Skala Kematangan (Maturity Level)
 
-```
-Level 0: TIDAK JALAN
-├── Sistem deploy tapi tidak dipakai siapa pun
-├── Tidak ada yang tahu cara operasikan
-└── ⚠️ Kemungkinan kondisi saat ini?
+```mermaid
+flowchart LR
+    L0["**Level 0: TIDAK JALAN**<br>Sistem deploy tapi tidak dipakai<br>Tidak ada yang tahu operasikan<br>⚠️ Kemungkinan kondisi saat ini?"]
+    L1["**Level 1: BERGANTUNG VENDOR**<br>Semua operasional bergantung vendor<br>Jika vendor lambat → sistem lumpuh<br>❌ Harus dihindari"]
+    L2["**Level 2: BISA OPERASIONAL DASAR**<br>Tim bisa handle operasional harian<br>Perlu vendor untuk hal kompleks<br>✅ Target minimum sebelum Fase 2"]
+    L3["**Level 3: MANDIRI PENUH**<br>Tim handle semua aspek SSO<br>Ada SOP, dokumentasi, backup person<br>🚀 Target jangka panjang"]
 
-Level 1: BERGANTUNG VENDOR
-├── Sistem jalan tapi semua operasional bergantung ke vendor/konsultan
-├── Jika vendor tidak respon → sistem lumpuh
-└── Ini yang harus dihindari
+    L0 --> L1 --> L2 --> L3
 
-Level 2: BISA OPERASIONAL DASAR
-├── Tim Kominfo bisa handle operasional harian
-├── Masih perlu vendor untuk hal kompleks (upgrade, integrasi baru)
-└── Target minimum sebelum Fase 2
+    classDef l0 fill:#7f1d1d,stroke:#ef4444,stroke-width:2px,color:#fff;
+    classDef l1 fill:#9a3412,stroke:#f97316,stroke-width:2px,color:#fff;
+    classDef l2 fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff;
+    classDef l3 fill:#1e3a8a,stroke:#3b82f6,stroke-width:2px,color:#fff;
 
-Level 3: MANDIRI PENUH
-├── Tim Kominfo bisa handle semua aspek SSO
-├── Ada SOP, dokumentasi, dan backup person
-└── Target jangka panjang
+    class L0 l0;
+    class L1 l1;
+    class L2 l2;
+    class L3 l3;
 ```
 
 ---
