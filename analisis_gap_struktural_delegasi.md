@@ -86,7 +86,12 @@ flowchart TD
         GapS1>⚠️ GAP: Apakah ada SK penunjukan PIC SSO?]
         GapS2>⚠️ GAP: Apakah pejabat memahami apa itu SSO?]
     end
+    classDef gap fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#92400e;
+    class GapS1,GapS2 gap;
+```
 
+```mermaid
+flowchart TD
     subgraph T["**TEKNIS (Pelaksana)**"]
         direction TB
         Prog["Programmer / Developer Kominfo"]
@@ -102,7 +107,12 @@ flowchart TD
         GapT2>⚠️ GAP: Apakah ada rotasi/mutasi sejak training?]
         GapT3>⚠️ GAP: Apakah ada serah terima knowledge internal?]
     end
+    classDef gap fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#92400e;
+    class GapT1,GapT2,GapT3 gap;
+```
 
+```mermaid
+flowchart TD
     subgraph U["**PENGGUNA (OPD)**"]
         direction TB
         Admin["Admin OPD (tiap instansi)"]
@@ -117,9 +127,8 @@ flowchart TD
         GapU1>⚠️ GAP: OPD mungkin belum paham kenapa harus pakai SSO]
         GapU2>⚠️ GAP: Tidak ada 'champion' SSO di tiap OPD]
     end
-
     classDef gap fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#92400e;
-    class GapS1,GapS2,GapT1,GapT2,GapT3,GapU1,GapU2 gap;
+    class GapU1,GapU2 gap;
 ```
 
 ### B. Matriks Delegasi — Siapa Bertanggung Jawab Apa?
