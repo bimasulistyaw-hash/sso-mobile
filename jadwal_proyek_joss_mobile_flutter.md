@@ -65,7 +65,7 @@
 
 ---
 
-### [FASE 1] BULAN 1 — Perencanaan, Integrasi API, & Autentikasi SSO Mobile
+### [FASE A] BULAN 1 — Perencanaan, Integrasi API, & Autentikasi SSO Mobile
 
 > **Fokus:** Menyiapkan pondasi aplikasi dan melakukan integrasi core SSO ke platform mobile (Android & iOS).
 
@@ -115,13 +115,13 @@
 
 ---
 
-### [FASE 2] BULAN 2 — Pengembangan Fitur Utama & Integrasi Layanan (Core Features)
+### [FASE B] BULAN 2 — Pengembangan Fitur Utama & Integrasi Layanan (Core Features)
 
 > **Fokus:** Membangun fungsionalitas utama aplikasi dan mengintegrasikan modul-modul turunan SSO.
 
 ---
 
-#### II.V — Minggu 5: Dashboard & Navigasi Utama
+#### II.V — Sprint 1: Dashboard & Navigasi Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                     |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -132,7 +132,7 @@
 
 ---
 
-#### II.VI — Minggu 6: Modul Fitur Layanan Utama
+#### II.VI — Sprint 2: Modul Fitur Layanan Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -155,7 +155,7 @@
 ---
 
 
-#### II.VII — Minggu 7: Push Notification & Pengaturan Akun
+#### II.VII — Sprint 3: Push Notification & Pengaturan Akun
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                               |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -166,7 +166,7 @@
 
 ---
 
-#### II.VIII — Minggu 8: Offline Caching & Optimasi
+#### II.VIII — Sprint 4: Offline Caching & Optimasi
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -177,7 +177,7 @@
 
 ---
 
-### [FASE 3] BULAN 3 — Testing, Bug Fixing, ToT, & Deployment
+### [FASE C] BULAN 3 — Testing, Bug Fixing, ToT, & Deployment
 
 > **Fokus:** Pengujian menyeluruh, perbaikan bug, pelatihan pengguna, dan publikasi aplikasi.
 
