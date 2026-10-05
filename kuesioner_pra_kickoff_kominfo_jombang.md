@@ -257,14 +257,16 @@ Bagaimana ketersediaan file aset visual resmi (logo JOSS Mobile, logo Pemkab Jom
 *Tujuan: Mengantisipasi kendala administratif dan teknis sebelum masa rilis publikasi di toko aplikasi resmi.*
 
 #### 12. Status Akun Google Play Console & Apple Developer Program
-Bagaimana status kepemilikan akun developer toko aplikasi resmi atas nama Pemerintah Kabupaten Jombang saat ini?
+Bagaimana status kepemilikan akun developer toko aplikasi resmi atas nama Pemerintah Kabupaten Jombang saat ini, dan siapa delegasi/personil yang akan ditugaskan untuk mengelola akun tersebut?
 * **Jawaban:**  
   * Google Play Console (Android) :
   <div style="border: 1px solid #333; width: 100%; height: 100px; border-radius: 5px; margin-top: 10px; margin-bottom: 10px;"></div>
   * Apple Developer Program (iOS) :
   <div style="border: 1px solid #333; width: 100%; height: 100px; border-radius: 5px; margin-top: 10px; margin-bottom: 10px;"></div>
+  * Delegasi Pengelola Akun (PIC) :
+  <div style="border: 1px solid #333; width: 100%; height: 100px; border-radius: 5px; margin-top: 10px; margin-bottom: 10px;"></div>
 * *Contoh Pengisian:*  
-  > *"Akun Google Play Console atas nama Dinas Kominfo Kabupaten Jombang sudah aktif dan siap digunakan rilis. Untuk Apple Developer Program organisasi saat ini sedang dalam proses penyiapan D-U-N-S Number instansi."*
+  > *"Akun Google Play Console atas nama Dinas Kominfo Kabupaten Jombang sudah aktif dan siap digunakan rilis. Apple Developer Program sedang dalam proses penyiapan D-U-N-S Number. Akun akan dikelola oleh Bapak Budi dari Bidang Aptika."*
 
 ---
 
