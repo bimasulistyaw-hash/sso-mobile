@@ -1,0 +1,6 @@
+# Python scratch scripts
+scratch_*.py
+
+# Backup files
+*.bak
+*.bak.*

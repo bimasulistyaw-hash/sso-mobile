@@ -11,9 +11,9 @@
 | **Nama Proyek**             | JOSS Mobile (Jombang One Stop Service)                             |
 | **Klien**                   | Pemerintah Kabupaten Jombang — Dinas Komunikasi dan Informatika            |
 | **Fase**                    | Fase 2 — Pengembangan Portal Aplikasi Mobile (Flutter: Android & iOS)      |
-| **Durasi**                  | 3 Bulan (12 Minggu Efektif)                                               |
-| **Estimasi Mulai**          | Minggu ke-1 s.d. ke-2 Oktober 2026 *(estimasi mundur 1–2 minggu dari 1 Oktober)* |
-| **Estimasi Selesai**        | Minggu ke-2 s.d. ke-3 Januari 2027                                         |
+| **Durasi**                  | 2,5 Bulan (11 Minggu Efektif)                                              |
+| **Estimasi Mulai**          | Minggu ke-1 Oktober 2026                                                   |
+| **Estimasi Selesai**        | Pertengahan Desember 2026 (Minggu ke-2 s.d. ke-3 Desember 2026)           |
 | **Portal Web (Fase 1)**     | ✅ Live — https://joss.jombangkab.go.id                                  |
 | **SSO Server**              | Keycloak — https://sso-v2.jombangkab.go.id (Realm: `jombangkab`)          |
 | **Protokol Autentikasi**    | OAuth2 / OpenID Connect (Authorization Code Flow)                          |
@@ -32,39 +32,38 @@
 
 | **Fase** | **Minggu (Durasi)** | **Fokus Utama** |
 | --- | --- | --- |
-| **FASE A:** Perencanaan & Integrasi API/SSO | 1–4 (4 Minggu) | Setup proyek, desain UI/UX, integrasi autentikasi SSO |
-| **FASE B:** Pengembangan Fitur Utama & Layanan | 5–8 (4 Minggu) | Dashboard, modul layanan, notifikasi, offline cache |
-| **FASE C:** Testing, ToT, & Deployment | 9–12 (4 Minggu) | Alpha/UAT testing, pelatihan, rilis & serah terima |
+| **FASE A:** Perencanaan & Integrasi API/SSO | 1–4 (4 Minggu / Okt) | Setup proyek, desain UI/UX, integrasi autentikasi SSO, manajemen sesi |
+| **FASE B:** Pengembangan Fitur Utama & Layanan | 5–8 (4 Minggu / Nov) | Dashboard, modul layanan, push notification, offline cache, ToT SSO teknis |
+| **FASE C:** Testing, UAT, ToT, Deployment & BAST | 9–11 (3 Minggu / Des s.d. Pertengahan) | Alpha/UAT testing, ToT admin, submission store, serah terima & BAST |
 
-### Tabel Detail Gantt Chart — 12 Minggu
+### Tabel Detail Gantt Chart — 11 Minggu (Target Pertengahan Desember 2026)
 
-| **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** | **Jan** |
-| --- | --- | --- | --- | --- | --- |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Kick-off (Inc. Meeting Penggalian Kebutuhan), finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* <br> <span style="color:#2563EB;">*(Goal: Modul terpetakan & approval scope prioritas dari Top Management MBO)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Pengembangan & Penyesuaian API Backend Tambahan <br> <span style="color:#2563EB;">*(Goal: API Backend siap dikonsumsi mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Desain UI/UX Portal Layanan & Persetujuan Klien <br> <span style="color:#2563EB;">*(Goal: Pihak Jombang setuju dengan desain UI/UX Portal Mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Meeting Evaluasi & Penyempurnaan Desain UI/UX <br> <span style="color:#2563EB;">*(Goal: Finalisasi iterasi desain dengan MBO Jombang)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Integrasi API SSO, Modul Login/Register & Finalisasi Mapping <br> <span style="color:#2563EB;">*(Goal: Seluruh kebutuhan API final & Modul SSO terintegrasi penuh)*</span> | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Manajemen sesi, EncryptedSharedPreferences, refresh token <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> | <span style="color:#2563EB;">███</span> |  |  |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Okt–Nov Minggu 4–2 | **Sprint 1:** Portal Layanan Utama & Katalog Aplikasi sesuai UI/UX Figma <br> *(Modul Portal Layanan & Navigasi)* <br> <span style="color:#16A34A;">**• Internal Review (QA Kesesuaian Desain)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 1 (Demo UI & Flow ke Klien)**</span> | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Sprint 2:** Modul layanan utama (profil, riwayat, layanan instansi) <br> *(Modul Profil, Riwayat, Layanan)* <br> <span style="color:#16A34A;">**• Internal Review (QA Fungsi Layanan)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 2 (Demo Fungsi Layanan)**</span> |  | <span style="color:#16A34A;">███</span> |  |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3–4 | **Extra:** ToT & Pelatihan Teknis SSO Keycloak (Khusus Kominfo Jombang) <br> <span style="color:#16A34A;">*(Goal: Pemahaman penuh integrasi portal & SSO)*</span> |  | <span style="color:#16A34A;">███</span> |  |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Nov–Des Minggu 4–1 | **Sprint 3:** Push notification (FCM), pengaturan akun & preferensi <br> *(Modul Notifikasi (FCM) & Akun)* <br> <span style="color:#16A34A;">**• Internal Review (QA Notifikasi)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 3 (Demo Notifikasi)**</span> |  | <span style="color:#16A34A;">██</span> | <span style="color:#16A34A;">██</span> |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 1–2 | **Sprint 4:** Offline caching (Local DB), optimasi performa <br> *(Modul Cache Offline & Core)* <br> <span style="color:#16A34A;">**• Internal Review (QA Akhir Fase B)**</span> |  |  | <span style="color:#16A34A;">███</span> |  |
-| <span style="color:#16A34A;">**[B]**</span><br>Des Minggu 2 | **Review Akhir Fase B & Penyesuaian Minor bersama Kominfo** <br> <span style="color:#16A34A;">*(Goal: Finalisasi fitur & persetujuan masuk Alpha Test)*</span> |  |  | <span style="color:#16A34A;">███</span> |  |
-| <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 2–3 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |  |
-| <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 3–4 | UAT bersama klien Jombang, perbaikan dari feedback <br> *(Beta Release Build (UAT))* |  |  | <span style="color:#EA580C;">███</span> |  |
-| <span style="color:#EA580C;">**[C]**</span><br>Des–Jan Minggu 4–1 | ToT (Training of Trainer), finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | <span style="color:#EA580C;">██</span> | <span style="color:#EA580C;">██</span> |
-| <span style="color:#EA580C;">**[C]**</span><br>Jan Minggu 1–2 | Submission Play Store, serah terima, BAST <br> *(Production Release)* <br> <span style="color:#EA580C;">**• Final Review & Penutupan Proyek**</span> |  |  |  | <span style="color:#EA580C;">███</span> |
+| **Fase / Periode** | **Aktivitas & Modul** | **Okt** | **Nov** | **Des** |
+| --- | --- | --- | --- | --- |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1 | Kick-off (Inc. Meeting Penggalian Kebutuhan), finalisasi KAK, setup repo & arsitektur <br> *(Arsitektur Dasar & Boilerplate)* | <span style="color:#2563EB;">███</span> |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 1–2 | Identifikasi Kebutuhan Mobile JOSS & Mapping API <br> *(Gap Analysis Kebutuhan Mobile vs Endpoint)* <br> <span style="color:#2563EB;">*(Goal: Modul terpetakan & approval scope prioritas dari Top Management MBO)*</span> | <span style="color:#2563EB;">███</span> |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2 | Desain UI/UX Portal Layanan & Persetujuan Klien <br> <span style="color:#2563EB;">*(Goal: Pihak Jombang setuju dengan desain UI/UX Portal Mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 2–3 | Meeting Evaluasi Desain UI/UX & Pengembangan API Backend Tambahan <br> <span style="color:#2563EB;">*(Goal: Finalisasi desain & API backend siap dikonsumsi mobile)*</span> | <span style="color:#2563EB;">███</span> |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 3 | Integrasi API SSO Keycloak (OIDC+PKCE), Login/Register & Network Layer <br> <span style="color:#2563EB;">*(Goal: Seluruh kebutuhan API final & Modul SSO terintegrasi penuh)*</span> | <span style="color:#2563EB;">███</span> |  |  |
+| <span style="color:#2563EB;">**[A]**</span><br>Okt Minggu 4 | Manajemen sesi, EncryptedSharedPreferences, refresh token otomatis <br> *(Modul Keamanan Sesi & Token)* <br> <span style="color:#2563EB;">**• Review Progress Akhir Fase A**</span> | <span style="color:#2563EB;">███</span> |  |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 1 | **Sprint 1:** Portal Layanan Utama & Katalog Aplikasi sesuai UI/UX Figma <br> *(Modul Portal Layanan & Navigasi)* <br> <span style="color:#16A34A;">**• Internal Review (QA Kesesuaian Desain)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 1 (Demo UI & Flow ke Klien)**</span> |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 2 | **Sprint 2:** Modul layanan utama (profil pengguna, riwayat, layanan instansi) <br> *(Modul Profil, Riwayat, Layanan)* <br> <span style="color:#16A34A;">**• Internal Review (QA Fungsi Layanan)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 2 (Demo Fungsi Layanan)**</span> |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 2 | **Extra:** ToT & Pelatihan Teknis SSO Keycloak (Khusus Kominfo Jombang) <br> <span style="color:#16A34A;">*(Goal: Pemahaman penuh integrasi portal & SSO)*</span> |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 3 | **Sprint 3:** Push notification (FCM), in-app notification & pengaturan akun <br> *(Modul Notifikasi & Akun)* <br> <span style="color:#16A34A;">**• Internal Review (QA Notifikasi)**</span> <br> <span style="color:#16A34A;">**• Sprint Review 3 (Demo Notifikasi)**</span> |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 4 | **Sprint 4:** Offline caching (Local DB), connectivity checker, optimasi performa <br> *(Modul Cache Offline & Core)* <br> <span style="color:#16A34A;">**• Internal Review (QA Akhir Fase B)**</span> |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#16A34A;">**[B]**</span><br>Nov Minggu 4 | **Review Akhir Fase B & Penyesuaian Minor bersama Kominfo** <br> <span style="color:#16A34A;">*(Goal: Finalisasi fitur & persetujuan masuk Alpha Test)*</span> |  | <span style="color:#16A34A;">███</span> |  |
+| <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 1 | Alpha testing internal, penyusunan test case, bug fixing <br> *(Alpha Release Build)* |  |  | <span style="color:#EA580C;">███</span> |
+| <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 2 | UAT bersama klien Jombang, penyempurnaan aplikasi & penandatanganan BA UAT <br> *(Beta Release Build (UAT))* |  |  | <span style="color:#EA580C;">███</span> |
+| <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 2 | ToT (Training of Trainer) Pengelola/Admin Jombang, finalisasi build Release Candidate <br> *(Release Candidate Build)* |  |  | <span style="color:#EA580C;">███</span> |
+| <span style="color:#EA580C;">**[C]**</span><br>Des Minggu 2–3 | Submission Play Store, serah terima, BAST, handover seluruh aset & dokumen <br> *(Production Release)* <br> <span style="color:#EA580C;">**• Final Review & Penutupan Proyek (Pertengahan Des 2026)**</span> |  |  | <span style="color:#EA580C;">███</span> |
 
 ### Visualisasi Progress per Bulan
 
 | **Bulan** | **W1** | **W2** | **W3** | **W4** | **Milestone Utama** |
 | --- | --- | --- | --- | --- | --- |
-| **Bulan 1** (Okt–Nov) | <span style="color:#2563EB; font-weight:bold;">[A]</span> Kick-off & KAK | <span style="color:#2563EB; font-weight:bold;">[A]</span> Desain UI/UX | <span style="color:#2563EB; font-weight:bold;">[A]</span> Integrasi SSO | <span style="color:#2563EB; font-weight:bold;">[A]</span> Manajemen Sesi | ✅ Autentikasi SSO Mobile berjalan |
-| **Bulan 2** (Nov–Des) | <span style="color:#16A34A; font-weight:bold;">[B]</span> Dashboard | <span style="color:#16A34A; font-weight:bold;">[B]</span> Modul Layanan | <span style="color:#16A34A; font-weight:bold;">[B]</span> Notifikasi | <span style="color:#16A34A; font-weight:bold;">[B]</span> Offline Cache | ✅ Seluruh fitur utama selesai |
-| **Bulan 3** (Des–Jan) | <span style="color:#EA580C; font-weight:bold;">[C]</span> Alpha Test | <span style="color:#EA580C; font-weight:bold;">[C]</span> UAT Klien | <span style="color:#EA580C; font-weight:bold;">[C]</span> ToT & Build Final | <span style="color:#EA580C; font-weight:bold;">[C]</span> Rilis & BAST | ✅ Aplikasi live & proyek serah terima |
+| **Bulan 1** (Oktober) | <span style="color:#2563EB; font-weight:bold;">[A]</span> Kick-off & KAK | <span style="color:#2563EB; font-weight:bold;">[A]</span> Desain UI/UX & API | <span style="color:#2563EB; font-weight:bold;">[A]</span> Integrasi SSO Keycloak | <span style="color:#2563EB; font-weight:bold;">[A]</span> Manajemen Sesi | ✅ Autentikasi SSO Mobile & Sesi berjalan |
+| **Bulan 2** (November) | <span style="color:#16A34A; font-weight:bold;">[B]</span> Portal Layanan & Navigasi | <span style="color:#16A34A; font-weight:bold;">[B]</span> Fitur Layanan + ToT SSO | <span style="color:#16A34A; font-weight:bold;">[B]</span> Push Notifikasi & Akun | <span style="color:#16A34A; font-weight:bold;">[B]</span> Offline Cache & Review Fase B | ✅ Seluruh fitur inti & layanan selesai |
+| **Bulan 3** (Desember s.d. Pertengahan) | <span style="color:#EA580C; font-weight:bold;">[C]</span> Alpha Test & Bug Fixing | <span style="color:#EA580C; font-weight:bold;">[C]</span> UAT Klien & ToT Admin | <span style="color:#EA580C; font-weight:bold;">[C]</span> Store Submit, BAST & Handover | <span style="color:#94A3B8;">*(Proyek Selesai & Ditutup)*</span> | ✅ Aplikasi live, BAST disahkan sebelum cut-off APBD |
 
 ---
 
@@ -78,7 +77,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-1/ke-2 Oktober 2026                                                                                                                                               |
+| **Periode**    | Minggu ke-1 Oktober 2026                                                                                                                                                    |
 | **Aktivitas**  | 🔹 Koordinasi internal tim, Kick-off meeting, & **Meeting Khusus Penggalian Kebutuhan Mobile dengan Kominfo Jombang** <br> 🔹 Finalisasi KAK (Kerangka Acuan Kerja) <br> 🔹 Setup arsitektur proyek Flutter (Android & iOS, repository, CI/CD pipeline, code convention) <br> 🔹 Review dan mapping endpoint API dari portal web JOSS <br> 🔹 Registrasi client `joss-mobile` di Keycloak (realm `jombangkab`) <br> 🔹 Identifikasi API yang sudah ada vs API yang perlu dibangun baru <br> 🔹 Penyusunan wireframe awal |
 | **Output**     | ✅ Dokumen KAK Final yang disetujui kedua belah pihak <br> ✅ Project Repository & Boilerplate Flutter (Dart) <br> ✅ Client `joss-mobile` terdaftar di Keycloak <br> ✅ Dokumen Gap Analysis API (existing vs required) <br> ✅ **Persetujuan scope modul (ceklist lolos/di-keep) dari Top Management MBO** <br> ✅ Wireframe UI/UX (Low-Fidelity) |
 | **PIC**        | Project Manager, Lead Developer, UI/UX Designer                                                                                                                             |
@@ -89,7 +88,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                            |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-1/ke-2 Oktober 2026                                                                                                                                                                         |
+| **Periode**    | Minggu ke-2 Oktober 2026                                                                                                                                                                              |
 | **Aktivitas**  | 🔹 Finalisasi desain UI/UX di Figma (High-Fidelity) untuk seluruh halaman utama <br> 🔹 Desain halaman: Splash Screen, Onboarding, Login/Register, Lupa Password, Portal Layanan Utama, Profil Pengguna <br> 🔹 Penyusunan Design System (warna, tipografi, komponen reusable) <br> 🔹 Review awal desain oleh klien <br> 🔹 **Meeting khusus evaluasi & penyempurnaan UI/UX bersama MBO Jombang** <br> 🔹 Finalisasi & approval desain (sign-off) |
 | **Output**     | ✅ Dokumen Desain UI/UX Final (Figma Link) — disetujui klien <br> ✅ Design System / Style Guide Aplikasi <br> ✅ Prototype Interaktif (Clickable Prototype)                                          |
 | **PIC**        | UI/UX Designer, Project Manager                                                                                                                                                                       |
@@ -100,7 +99,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                  |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-2/ke-3 Oktober 2026                                                                                                                                               |
+| **Periode**    | Minggu ke-2 s.d. ke-3 Oktober 2026                                                                                                                                          |
 | **Aktivitas**  | 🔹 Eksekusi hasil Gap Analysis API <br> 🔹 Pembuatan endpoint backend baru khusus mobile (jika belum ter-cover oleh web JOSS) <br> 🔹 Penyesuaian response API agar mobile-friendly |
 | **Output**     | ✅ API Backend tambahan siap dikonsumsi oleh aplikasi mobile <br> ✅ Dokumentasi API (Swagger/Postman) ter-update |
 | **PIC**        | Backend Developer, Lead Developer |
@@ -112,7 +111,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-2/ke-3 Oktober 2026                                                                                                                                                                                            |
+| **Periode**    | Minggu ke-3 Oktober 2026                                                                                                                                                                                                                  |
 | **Aktivitas**  | 🔹 Implementasi autentikasi via **Keycloak OIDC + PKCE** menggunakan library **flutter_appauth** <br> 🔹 Flow: Login → In-App Browser → Keycloak → Redirect URI → Access Token <br> 🔹 Integrasi endpoint Keycloak realm `jombangkab` (token, userinfo, logout) <br> 🔹 Implementasi **JWT Token Handling**: penyimpanan, parsing, dan validasi token <br> 🔹 Setup **Dio/HTTP** + Interceptor untuk auto-attach Bearer token <br> 🔹 Pengembangan **API backend tambahan** yang belum tersedia untuk mobile |
 | **Output**     | ✅ Modul Login via Keycloak OIDC+PKCE berjalan <br> ✅ Register & Lupa Password via Keycloak flow <br> ✅ Network Layer (Dio / HTTP Interceptor) terkonfigurasi <br> ✅ **Seluruh Kebutuhan & Mapping API Mobile Final/Terpenuhi** <br> ✅ Unit Test untuk modul autentikasi                                 |
 | **PIC**        | Lead Developer, Backend Developer (support)                                                                                                                                                                                                |
@@ -123,7 +122,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-2/ke-3 Oktober 2026                                                                                                                                                                                                |
+| **Periode**    | Minggu ke-4 Oktober 2026                                                                                                                                                                                                      |
 | **Aktivitas**  | 🔹 Implementasi **Flutter Secure Storage** untuk penyimpanan token & kredensial yang aman <br> 🔹 Implementasi fitur **Auto-Login** (persistent session) <br> 🔹 Implementasi fitur **Logout** (clear token, revoke session di server) <br> 🔹 Implementasi mekanisme **Refresh Token** otomatis <br> 🔹 Penanganan error & expired token (redirect ke halaman login) <br> 🔹 **Review Progress Akhir Fase A bersama Klien** |
 | **Output**     | ✅ Modul Manajemen Sesi & Keamanan Akses lengkap <br> ✅ Fitur Auto-Login & Persistent Session <br> ✅ Mekanisme Refresh Token otomatis <br> ✅ Secure Storage untuk data sensitif <br> ✅ Laporan Review Progress Fase A |
 | **PIC**        | Lead Developer, Security Reviewer                                                                                                                                                                                              |
@@ -136,22 +135,22 @@
 
 ---
 
-#### II.V — Sprint 1: Portal Layanan & Navigasi Utama
+#### II.V — Sprint 1 (Minggu 5): Portal Layanan & Navigasi Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                     |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-4 Oktober / Minggu ke-2 November 2026                                                                                                                                                                                 |
+| **Periode**    | Minggu ke-1 November 2026                                                                                                                                                                                      |
 | **Aktivitas**  | 🔹 Pengembangan halaman **Portal Layanan Utama & Katalog Aplikasi** setelah login berhasil <br> 🔹 Implementasi **Bottom Navigation / Drawer Navigation** <br> 🔹 Integrasi data ringkasan (summary cards, statistik, atau quick-access menu) <br> 🔹 Implementasi **pull-to-refresh** dan loading state |
 | **Output**     | ✅ Halaman Portal Layanan Utama aplikasi <br> ✅ Sistem Navigasi Aplikasi (Bottom Nav / Drawer) <br> ✅ Komponen UI reusable (cards, lists, loading indicators)                                                       |
 | **PIC**        | Flutter Developer, UI/UX Designer                                                                                                                                                                               |
 
 ---
 
-#### II.VI — Sprint 2: Modul Fitur Layanan Utama
+#### II.VI — Sprint 2 (Minggu 6): Modul Fitur Layanan Utama
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-3/ke-4 November 2026                                                                                                                                                                                                                                      |
+| **Periode**    | Minggu ke-2 November 2026                                                                                                                                                                                                                                           |
 | **Aktivitas**  | 🔹 Pengembangan modul layanan utama sesuai kebutuhan Jombang, meliputi: <br> &nbsp;&nbsp;• **Profil Warga/Pengguna** (view & edit profil, upload foto) <br> &nbsp;&nbsp;• **Riwayat Akses/Aktivitas** pengguna <br> &nbsp;&nbsp;• **Integrasi Layanan Instansi** terkait (jika ada endpoint layanan publik) <br> 🔹 Integrasi API layanan dengan error handling yang proper <br> 🔹 **Internal Review (QA):** Validasi fungsi layanan instansi & riwayat akses <br> 🔹 **Sprint Review 2:** Demo hasil modul layanan kepada klien |
 | **Output**     | ✅ Modul Profil Pengguna (View, Edit, Upload Foto) <br> ✅ Modul Riwayat Akses / Log Aktivitas <br> ✅ Modul Layanan Instansi (Versi 1) <br> ✅ Integrasi API Layanan berjalan                                                                                       |
 | **PIC**        | Flutter Developer, Backend Developer (support API)                                                                                                                                                                                                                   |
@@ -162,7 +161,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-3/ke-4 November 2026                                                                                                                                                                                                                                      |
+| **Periode**    | Minggu ke-2 November 2026                                                                                                                                                                                                                                           |
 | **Aktivitas**  | 🔹 Pelatihan khusus delegasi teknis Dinas Kominfo Jombang mengenai arsitektur SSO Keycloak <br> 🔹 Penjelasan detail proses integrasi aplikasi & portal dengan SSO Keycloak <br> 🔹 Memastikan tidak ada *knowledge gap* dari fase sebelumnya <br> 🔹 Praktek langsung pendaftaran klien dan manajemen akses Keycloak |
 | **Output**     | ✅ Pemahaman penuh dari sisi teknis Kominfo mengenai SSO Keycloak <br> ✅ Laporan Pelaksanaan ToT Khusus Integrasi SSO                                                                                       |
 | **PIC**        | Project Manager, Lead Developer, Perwakilan Teknis Kominfo Jombang                                                                                                                                                                                                                   |
@@ -170,22 +169,22 @@
 ---
 
 
-#### II.VII — Sprint 3: Push Notification & Pengaturan Akun
+#### II.VII — Sprint 3 (Minggu 7): Push Notification & Pengaturan Akun
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                               |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-4 November / Minggu ke-1 Desember 2026                                                                                                                                                                                                           |
-| **Aktivitas**  | 🔹 Integrasi **Firebase Cloud Messaging (FCM)** untuk push notification <br> 🔹 Implementasi notifikasi: pengumuman, update layanan, dan reminder <br> 🔹 Pengembangan halaman **Pengaturan Akun** (ubah password, pengaturan notifikasi, bahasa, tema) <br> 🔹 Implementasi **in-app notification center** (daftar notifikasi yang diterima) |
+| **Periode**    | Minggu ke-3 November 2026                                                                                                                                                                                                                                |
+| **Aktivitas**  | 🔹 Integrasi **Firebase Cloud Messaging (FCM)** untuk push notification <br> 🔹 Implementasi notifikasi: pengumuman, update layanan, dan reminder <br> 🔹 Pengembangan halaman **Pengaturan Akun** (ubah password, pengaturan notifikasi, bahasa, tema) <br> 🔹 Implementasi **in-app notification center** (daftar notifikasi yang diterima) <br> 🔹 *Persiapan awal kelengkapan akun Google Play Developer & Apple Developer* |
 | **Output**     | ✅ Modul Push Notification (FCM) terintegrasi dan berfungsi <br> ✅ In-App Notification Center <br> ✅ Halaman Pengaturan Akun Pengguna <br> ✅ Pengaturan preferensi notifikasi                                                                            |
 | **PIC**        | Flutter Developer, Backend Developer (FCM setup)                                                                                                                                                                                                          |
 
 ---
 
-#### II.VIII — Sprint 4: Offline Caching & Optimasi
+#### II.VIII — Sprint 4 (Minggu 8): Offline Caching & Optimasi
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-1/ke-2 Desember 2026                                                                                                                                                                                                                                          |
+| **Periode**    | Minggu ke-4 November 2026                                                                                                                                                                                                                                               |
 | **Aktivitas**  | 🔹 Implementasi **Local Database** (sqflite / Hive) untuk offline caching data penting <br> 🔹 Optimasi performa aplikasi: memory, network call, dan battery usage <br> 🔹 Implementasi **connectivity checker** (online/offline mode) <br> 🔹 **Internal Review (QA Final Fase B):** Pengecekan stabilitas & integrasi seluruh modul |
 | **Output**     | ✅ Local Database & Offline Caching <br> ✅ Connectivity-aware UX (indikator online/offline) <br> ✅ Laporan optimasi performa aplikasi <br> ✅ Hasil QA Stabilitas Modul |
 | **PIC**        | Lead Developer, Flutter Developer                                                                                                                                                                                                                                        |
@@ -196,16 +195,16 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-2 Desember 2026                                                                                                                                                                                                                                          |
+| **Periode**    | Akhir November 2026 (Minggu ke-8 Proyek)                                                                                                                                                                                                                                |
 | **Aktivitas**  | 🔹 Laporan menyeluruh hasil Fase B kepada Kominfo Jombang <br> 🔹 Verifikasi kesesuaian fitur aplikasi mobile dengan rencana awal <br> 🔹 **Penyesuaian minor/finalisasi** berdasarkan feedback cepat dari Kominfo <br> 🔹 Persetujuan/Sign-off untuk melanjutkan ke Fase C (Alpha Test & UAT) |
 | **Output**     | ✅ Laporan Kesesuaian Aplikasi dengan Rencana Awal <br> ✅ Implementasi Penyesuaian Minor (jika ada) <br> ✅ Persetujuan (*Sign-off*) Fase B dari Klien |
 | **PIC**        | Project Manager, Lead Developer, Kominfo Jombang |
 
 ---
 
-### [FASE C] BULAN 3 — Testing, Bug Fixing, ToT, & Deployment
+### [FASE C] BULAN 3 — Testing, UAT, ToT, Deployment & Serah Terima (Target Pertengahan Desember)
 
-> **Fokus:** Pengujian menyeluruh, perbaikan bug, pelatihan pengguna, dan publikasi aplikasi.
+> **Fokus:** Pengujian menyeluruh, pengujian penerimaan pengguna (UAT), pelatihan admin, rilis production, serah terima hasil pekerjaan (BAST), dan penutupan proyek tuntas sebelum cut-off anggaran APBD.
 
 ---
 
@@ -213,7 +212,7 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-2/ke-3 Desember 2026                                                                                                                                                                                                                                |
+| **Periode**    | Minggu ke-1 Desember 2026                                                                                                                                                                                                                                     |
 | **Aktivitas**  | 🔹 Pelaksanaan **Internal/Alpha Testing** oleh tim pengembang <br> 🔹 Penyusunan **Test Case Document** & skenario UAT <br> 🔹 Identifikasi dan perbaikan bug (critical & major) <br> 🔹 Testing kompatibilitas di berbagai perangkat Android & iOS <br> 🔹 Security testing dasar (token exposure, data leakage) |
 | **Output**     | ✅ Dokumen Test Case (minimal 50 skenario) <br> ✅ Laporan Bug Fixing (Critical & Major resolved) <br> ✅ APK/IPA Internal Build (Alpha) untuk distribusi testing <br> ✅ Laporan Compatibility Testing                                                              |
 | **PIC**        | QA Tester, Lead Developer, Seluruh Tim Dev                                                                                                                                                                                                                     |
@@ -224,32 +223,32 @@
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                       |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-3/ke-4 Desember 2026                                                                                                                                                                                                                                                   |
-| **Aktivitas**  | 🔹 Pelaksanaan **User Acceptance Testing (UAT)** bersama tim/klien Jombang <br> 🔹 Pengumpulan feedback dan catatan evaluasi dari pengguna <br> 🔹 Penyempurnaan UI/UX berdasarkan hasil UAT <br> 🔹 Perbaikan bug minor yang ditemukan saat UAT <br> 🔹 Persiapan **materi ToT** (Training of Trainer): modul panduan, video tutorial singkat |
-| **Output**     | ✅ Berita Acara (BA) Pelaksanaan UAT — ditandatangani kedua pihak <br> ✅ Dokumen Catatan Evaluasi & Perbaikan UAT <br> ✅ APK/IPA Build (Beta — Post-UAT) <br> ✅ Draft Modul Panduan Penggunaan Aplikasi                                                                             |
+| **Periode**    | Minggu ke-2 Desember 2026                                                                                                                                                                                                                                                        |
+| **Aktivitas**  | 🔹 Pelaksanaan **User Acceptance Testing (UAT)** bersama tim/klien Diskominfo Jombang <br> 🔹 Pengumpulan feedback dan catatan evaluasi dari penguji OPD/Kominfo <br> 🔹 Penyempurnaan UI/UX & perbaikan bug minor hasil UAT <br> 🔹 **Penandatanganan Berita Acara (BA) UAT** <br> 🔹 Penyusunan draft modul panduan operasional |
+| **Output**     | ✅ **Berita Acara (BA) Pelaksanaan UAT — disetujui & ditandatangani kedua pihak** <br> ✅ Dokumen Catatan Evaluasi & Perbaikan UAT <br> ✅ APK/IPA Build (Beta — Post-UAT) <br> ✅ Draft Modul Panduan Penggunaan Aplikasi                                                    |
 | **PIC**        | Project Manager, QA Tester, Tim Dev, Perwakilan Klien                                                                                                                                                                                                                            |
 
 ---
 
-#### II.XI — Minggu 11: Training of Trainer (ToT) & Finalisasi Build
+#### II.XI — Minggu 10: Training of Trainer (ToT) & Finalisasi Build
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Periode**    | Minggu ke-4 Desember 2026 / Minggu ke-1 Januari 2027                                                                                                                                                                                                                            |
+| **Periode**    | Minggu ke-2 Desember 2026 (Paralel / Pasca-UAT)                                                                                                                                                                                                |
 | **Aktivitas**  | 🔹 Pelaksanaan kegiatan **ToT (Training of Trainer)** untuk pengelola/admin di Jombang <br> 🔹 Materi ToT mencakup: cara instalasi, penggunaan fitur, troubleshooting dasar, dan pengelolaan akun <br> 🔹 Finalisasi build aplikasi untuk rilis (Release Candidate) <br> 🔹 Penyusunan **Dokumentasi Teknis** (arsitektur, API docs, deployment guide) |
 | **Output**     | ✅ Laporan Pelaksanaan ToT (daftar hadir, dokumentasi foto, materi) <br> ✅ Modul Panduan Penggunaan Aplikasi (Final) <br> ✅ Master App Bundle (AAB) & Master IPA (Release Candidate) <br> ✅ Dokumentasi Teknis Aplikasi                                                                     |
 | **PIC**        | Project Manager, Lead Developer, Trainer                                                                                                                                                                                                                                        |
 
 ---
 
-#### II.XII — Minggu 12: Deployment, Serah Terima, & Penutupan Proyek
+#### II.XII — Minggu 11: Deployment, Serah Terima (BAST), & Penutupan Proyek
 
 | **Item**       | **Detail**                                                                                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Periode**    | Minggu ke-1/ke-2 Januari 2027                                                                                                                                                                                                                                                                                          |
-| **Aktivitas**  | 🔹 Proses **submission ke Google Play Store & Apple App Store** (atau distribusi internal MDM instansi) <br> 🔹 Monitoring pasca-rilis (crash reporting via Firebase Crashlytics) <br> 🔹 Penyusunan dokumen penutupan proyek <br> 🔹 Penandatanganan **Berita Acara Serah Terima (BAST)** <br> 🔹 Handover source code, dokumentasi, dan akses repository ke pihak Jombang <br> 🔹 **Pelaksanaan Final Review Proyek** |
-| **Output**     | ✅ Aplikasi JOSS Mobile tayang di Play Store & App Store <br> ✅ Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> ✅ Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak <br> ✅ Handover seluruh aset proyek <br> ✅ Laporan Final Review Proyek |
-| **PIC**        | Project Manager, Lead Developer, Perwakilan Klien                                                                                                                                                                                                                                                                       |
+| **Periode**    | **Pertengahan Desember 2026 (Minggu ke-2 s.d. ke-3 Desember 2026)**                                                                                                                                                                                                                                                    |
+| **Aktivitas**  | 🔹 Proses **submission ke Google Play Store & Apple App Store** (atau distribusi internal MDM Pemkab) <br> 🔹 Monitoring awal pasca-rilis (crash reporting via Firebase Crashlytics) <br> 🔹 Penyusunan dokumen penutupan proyek & kelengkapan administrasi pencairan <br> 🔹 **Penandatanganan Berita Acara Serah Terima (BAST)** <br> 🔹 Handover source code, dokumentasi, dan akses repository ke pihak Jombang <br> 🔹 **Pelaksanaan Final Review Proyek & Penutupan Resmi** |
+| **Output**     | ✅ Aplikasi JOSS Mobile siap rilis/tayang di Play Store & App Store <br> ✅ Dokumentasi Teknis Akhir (Source Code, API Docs, Deployment Guide) <br> ✅ **Berita Acara Serah Terima (BAST) — ditandatangani kedua pihak (Tuntas sebelum cut-off APBD)** <br> ✅ Handover seluruh aset proyek <br> ✅ Laporan Final Review & Penutupan Proyek |
+| **PIC**        | Project Manager, Lead Developer, Perwakilan Klien (Kominfo Jombang)                                                                                                                                                                                                                     |
 
 ---
 ## III. Daftar Modul Aplikasi JOSS Mobile
@@ -360,18 +359,22 @@ Mengingat **portal web JOSS dan SSO Keycloak dari Fase 1 sudah live**, berikut a
 ### 2. Pengembangan API Backend Tambahan (Baru)
 API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk mendukung aplikasi mobile:
 
-| **No** | **API Endpoint** | **Method** | **Fungsi** |
+| **No** | **API Endpoint** | **Method** | **Fungsi & Deskripsi** |
 | --- | --- | --- | --- |
-| 1 | `/api/v1/mobile/profile` | GET, PUT | Data profil pengguna (nama, email, foto, NIK) |
-| 2 | `/api/v1/mobile/profile/photo` | POST | Upload foto profil |
-| 3 | `/api/v1/mobile/layanan` | GET | Daftar layanan (mirror dari `/api/layanan` web) |
-| 4 | `/api/v1/mobile/layanan/{id}` | GET | Detail layanan spesifik |
-| 5 | `/api/v1/mobile/kategori` | GET | Daftar kategori layanan |
-| 6 | `/api/v1/mobile/riwayat` | GET | Riwayat akses/aktivitas pengguna |
-| 7 | `/api/v1/mobile/notifikasi` | GET, PUT | Daftar notifikasi & tandai sudah dibaca |
-| 8 | `/api/v1/mobile/notifikasi/register` | POST | Register FCM token untuk push notification |
-| 9 | `/api/v1/mobile/kyc/status` | GET | Cek status verifikasi KYC akun |
-| 10 | `/api/v1/mobile/app-version` | GET | Cek versi terbaru aplikasi (force update) |
+| 1 | `/api/v1/mobile/profile` | GET, PUT | Data profil pengguna (nama, email, no hp, NIK, status KYC) |
+| 2 | `/api/v1/mobile/profile/photo` | POST | Upload foto profil (Multipart Form) |
+| 3 | `/api/v1/mobile/kyc/status` | GET | Cek status verifikasi KYC akun (`UNVERIFIED`, `IN_REVIEW`, `VERIFIED`, `REJECTED`) |
+| 4 | `/api/v1/mobile/kyc/upload-ktp` | POST | **Upload foto fisik e-KTP** (Multipart gambar KTP terkompresi) |
+| 5 | `/api/v1/mobile/kyc/upload-selfie` | POST | **Upload foto selfie memegang e-KTP** (Multipart wajah + fisik KTP) |
+| 6 | `/api/v1/mobile/kyc/submit` | POST | **Submit pengajuan e-KYC** (NIK, data diri, ID berkas KTP & selfie) |
+| 7 | `/api/v1/mobile/layanan` | GET | Daftar katalog layanan OPD (mirror dari `/api/layanan` web JOSS) |
+| 8 | `/api/v1/mobile/layanan/{id}` | GET | Detail spesifik layanan OPD & flag syarat KYC (`is_kyc_required`) |
+| 9 | `/api/v1/mobile/kategori` | GET | Daftar master kategori layanan publik JOSS |
+| 10 | `/api/v1/mobile/banners` | GET | Daftar media banner hero slider beranda aktif |
+| 11 | `/api/v1/mobile/riwayat` | GET | Riwayat akses layanan & log aktivitas akun pengguna |
+| 12 | `/api/v1/mobile/notifikasi` | GET, PUT | Daftar pesan notifikasi inbox & tandai sudah dibaca |
+| 13 | `/api/v1/mobile/notifikasi/register` | POST | Register FCM token untuk push notification Android/iOS |
+| 14 | `/api/v1/mobile/app-version` | GET | Cek versi terbaru aplikasi client (mekanisme force update) |
 
 
 ### 3. Mobile Security
@@ -400,18 +403,18 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 
 | **No** | **Deliverable**                                  | **Target Minggu** |
 | ------ | ------------------------------------------------ | ------------------ |
-| 1      | Dokumen KAK Final                                | Minggu 1           |
-| 2      | Dokumen Desain UI/UX (Figma)                     | Minggu 2           |
-| 3      | Modul Login & Integrasi SSO                      | Minggu 3           |
-| 4      | Modul Manajemen Sesi & Keamanan                  | Minggu 4           |
-| 5      | Halaman Dashboard & Navigasi                     | Minggu 5           |
-| 6      | Modul Fitur Layanan Utama                        | Minggu 6           |
-| 7      | Modul Push Notification & Pengaturan Akun        | Minggu 7           |
-| 8      | Fitur Biometrik & Local Database                 | Minggu 8           |
-| 9      | Dokumen Test Case & APK Alpha                    | Minggu 9           |
-| 10     | Berita Acara UAT & Modul Panduan                 | Minggu 10          |
-| 11     | Laporan ToT & Master APK Final                   | Minggu 11          |
-| 12     | Aplikasi Live + BAST + Dokumentasi Teknis Akhir  | Minggu 12          |
+| 1      | Dokumen KAK Final                                | Minggu 1 (Okt W1)  |
+| 2      | Dokumen Desain UI/UX (Figma)                     | Minggu 2 (Okt W2)  |
+| 3      | Modul Login & Integrasi SSO                      | Minggu 3 (Okt W3)  |
+| 4      | Modul Manajemen Sesi & Keamanan                  | Minggu 4 (Okt W4)  |
+| 5      | Halaman Dashboard & Navigasi                     | Minggu 5 (Nov W1)  |
+| 6      | Modul Fitur Layanan Utama                        | Minggu 6 (Nov W2)  |
+| 7      | Modul Push Notification & Pengaturan Akun        | Minggu 7 (Nov W3)  |
+| 8      | Local Database & Offline Caching                 | Minggu 8 (Nov W4)  |
+| 9      | Dokumen Test Case & APK Alpha                    | Minggu 9 (Des W1)  |
+| 10     | Berita Acara UAT & Modul Panduan                 | Minggu 10 (Des W2) |
+| 11     | Laporan ToT & Master APK/AAB Final               | Minggu 10 (Des W2) |
+| 12     | Aplikasi Live + BAST + Dokumentasi Teknis Akhir (Penutupan Proyek) | Minggu 11 (Pertengahan Des 2026) |
 
 ---
 
@@ -421,9 +424,10 @@ API berikut **belum tersedia** dari portal web dan **perlu dibangun baru** untuk
 | ---------------------------------------------- | ----------------------------------------------------------------------------- |
 | Keterlambatan finalisasi KAK                   | Paralel dengan setup teknis di Minggu 1                                       |
 | Perubahan requirement di tengah proyek         | Change Request formal dengan impact analysis                                  |
-| Kompatibilitas perangkat Android & iOS beragam       | Testing di minimal 5 perangkat berbeda (iOS & Android)                            |
-| Kendala submission Play Store & App Store           | Persiapan akun developer & compliance sejak Minggu 9                          |
+| Kompatibilitas perangkat Android & iOS beragam | Testing di minimal 5 perangkat berbeda (iOS & Android)                        |
+| Kendala submission Play Store & App Store     | Persiapan akun developer & guideline compliance dipercepat sejak Minggu 7–8 November agar approval store siap sebelum pertengahan Desember |
 | Ketergantungan pada stabilitas API SSO Fase 1  | Monitoring uptime API & koordinasi rutin dengan tim backend                   |
+| Target Penutupan & BAST Pertengahan Desember   | Mengingat cut-off administrasi anggaran daerah (APBD/SP2D) pada pertengahan Desember 2026, tahapan testing, UAT, dan ToT dipadatkan di awal Desember sehingga BAST dan serah terima tuntas maksimal minggu ke-2/ke-3 Desember 2026 |
 
 ---
 
